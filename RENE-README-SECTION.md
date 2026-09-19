@@ -14,7 +14,7 @@ Production-ready AI Agent.
 | | |
 |---|---|
 | **Live app** | https://walkthelin3.replit.app/ |
-| **Write-up** | ARTIFACT_LINK_HERE |
+| **Write-up** | https://claude.ai/artifact/7zpNEbGd88rbQGuLsEFFBJ |
 | **Capture pipeline** | https://github.com/jymiller/milbird-walk-the-line |
 
 ## What ran
