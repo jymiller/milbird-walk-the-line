@@ -1,0 +1,53 @@
+{
+ "rules": [
+  {
+   "name": "stroke_width",
+   "rejects": "too thick to be a paint stroke",
+   "fired": 51
+  },
+  {
+   "name": "not_a_slab",
+   "rejects": "large and solid \u2014 street furniture, not a marking",
+   "fired": 1
+  },
+  {
+   "name": "on_pavement",
+   "rejects": "not surrounded by pavement",
+   "fired": 98
+  },
+  {
+   "name": "pigment_coherence",
+   "rejects": "colour too mixed or too dull for marking paint",
+   "fired": 18
+  },
+  {
+   "name": "ground_band",
+   "rejects": "too high in frame to be on the ground",
+   "fired": 21
+  },
+  {
+   "name": "not_vegetation",
+   "rejects": "living foliage, not pigment",
+   "fired": 43
+  },
+  {
+   "name": "flat_film",
+   "rejects": "shaded like a 3-D object, not a flat film on flat ground",
+   "fired": 0
+  }
+ ],
+ "thresholds": {
+  "stroke_max_frac": 0.014,
+  "slab_area_frac": 0.012,
+  "slab_extent": 0.7,
+  "pavement_min": 0.45,
+  "hue_std_max": 7.0,
+  "sat_mean_min": 110,
+  "ground_band": 0.62,
+  "exg_max": 0.06,
+  "value_cv_max": 0.28
+ },
+ "note": "Each rule votes to reject independently, with a measured number. A region can be rejected by several. Nothing here is learned and nothing calls a model \u2014 it is geometry and statistics over pixels.",
+ "api_version": "2.0",
+ "generated": "2026-09-19T23:19:19+00:00"
+}

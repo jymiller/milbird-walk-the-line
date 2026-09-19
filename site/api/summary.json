@@ -1,32 +1,37 @@
 {
  "video": "IMG_2104.MOV",
  "duration_s": 404.1,
- "detections": 53,
- "by_colour": {
-  "orange": 25,
-  "green": 4,
-  "yellow": 14,
-  "red": 4,
-  "blue": 6
+ "pipeline": {
+  "colour_regions": 124,
+  "rejected_by_classifiers": 122,
+  "machine_candidates": 2,
+  "human_confirmed": 0
  },
- "by_utility": {
-  "communications / fibre": 25,
-  "sewer, drain": 4,
-  "gas, oil, steam": 14,
-  "electric": 4,
-  "potable water": 6
+ "rejections_by_rule": {
+  "on_pavement": 98,
+  "not_vegetation": 43,
+  "stroke_width": 51,
+  "ground_band": 21,
+  "pigment_coherence": 18,
+  "not_a_slab": 1
  },
- "first_s": 13.5,
- "last_s": 404.1,
- "anchor": {
-  "lat": 37.7912,
-  "lon": -122.4078,
-  "accuracy_m": 7.018998,
-  "note": "single GPS point from clip metadata; per-mark coordinates are derived"
+ "colour_regions_by_colour": {
+  "orange": 63,
+  "green": 19,
+  "yellow": 24,
+  "red": 6,
+  "blue": 9,
+  "pink": 1,
+  "purple": 2
  },
+ "finding": "No utility locate marking was found on this segment of Pine Street.",
  "provenance": {
   "timestamps": "MEASURED \u2014 frame index / fps",
-  "colours": "MEASURED \u2014 HSV threshold against the APWA colour code",
-  "coordinates": "DERIVED \u2014 interpolated along the street axis from one GPS anchor in the clip metadata. Not surveyed."
- }
+  "colours": "MEASURED \u2014 HSV threshold against the APWA Uniform Color Code",
+  "classifiers": "MEASURED \u2014 seven geometric and statistical rules over the same pixels",
+  "coordinates": "DERIVED \u2014 interpolated along the street axis from a single GPS anchor in the clip metadata (+-7.0m). Not surveyed.",
+  "verdicts": "HUMAN \u2014 every surviving candidate was inspected by eye"
+ },
+ "api_version": "2.0",
+ "generated": "2026-09-19T23:19:19+00:00"
 }

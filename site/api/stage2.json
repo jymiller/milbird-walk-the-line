@@ -2,14 +2,17 @@
  "stage": 2,
  "stageName": "Utility Locates",
  "status": "proposed",
- "quantity": 53,
+ "quantity": 0,
  "unit": "each",
- "note": "Detected from sidewalk video: 53 locate marks, 25 orange, 14 yellow, 6 blue, 4 green, 4 red. Machine-proposed from video evidence \u2014 not confirmed.",
+ "note": "Video reviewed for utility locate marking: no marks found. 124 colour-matched regions across 49 frames were examined; 122 were rejected by classifier, 2 reached human review, and none was a locate mark. Absence of marking is itself the finding: this segment has not been marked.",
  "evidence": {
   "kind": "video",
   "source": "IMG_2104.MOV",
-  "frames_endpoint": "/api/frames/<t>.jpg",
-  "geojson_endpoint": "/api/locates"
+  "regions_endpoint": "/api/locates.json",
+  "rules_endpoint": "/api/rules.json"
  },
- "requiresHumanDecision": true
+ "requiresHumanDecision": true,
+ "externalId": "wtl-3167e83ea982483c",
+ "api_version": "2.0",
+ "generated": "2026-09-19T23:19:19+00:00"
 }
