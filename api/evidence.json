@@ -1,6 +1,35 @@
 {
  "api_version": "2.0",
- "generated": "2026-09-19T23:26:22+00:00",
+ "generated": "2026-09-19T23:32:59+00:00",
+ "source": {
+  "file": "IMG_2104.MOV",
+  "sha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+  "capturedAt": "2026-09-19T20:56:56Z",
+  "durationSeconds": 404.1,
+  "frameSize": [
+   1080,
+   1920
+  ]
+ },
+ "subject": {
+  "street": "Pine St, San Francisco",
+  "segmentDescription": "one continuous walk, filmed east-west at walking pace",
+  "gpsAnchor": {
+   "lat": 37.7912,
+   "lon": -122.4078,
+   "accuracyMetres": 7.0
+  },
+  "stageName": "Utility Locates",
+  "workTypeCode": "LOCATE",
+  "unit": "each"
+ },
+ "coverage": {
+  "kind": "partial",
+  "basis": "a single 404-second walk sampled at 1 frame per second",
+  "framesSampled": 405,
+  "framesWithColourMatch": 49,
+  "note": "This is one pass along one side of one street. It is evidence about what the camera saw, not a survey of the whole site."
+ },
  "proposal": {
   "externalId": "wtl-3167e83ea982483c",
   "stage": 2,
@@ -21,6 +50,7 @@
  "items": [
   {
    "id": "wtl-ev-0014",
+   "regionId": "wtl-r-0014-604-1595-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0013.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -28,6 +58,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 14,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -55,6 +87,7 @@
   },
   {
    "id": "wtl-ev-0016",
+   "regionId": "wtl-r-0016-856-1602-green",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0016.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -62,6 +95,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 16,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -90,6 +125,7 @@
   },
   {
    "id": "wtl-ev-0035",
+   "regionId": "wtl-r-0035-964-1130-green",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0034.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -97,6 +133,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 35,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 5,
    "verdict": "rejected",
    "extraction": {
@@ -127,6 +165,7 @@
   },
   {
    "id": "wtl-ev-0087",
+   "regionId": "wtl-r-0087-731-1064-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0087.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -134,6 +173,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 87,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -163,6 +204,7 @@
   },
   {
    "id": "wtl-ev-0095",
+   "regionId": "wtl-r-0095-709-1353-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0095.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -170,6 +212,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 95,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -197,6 +241,7 @@
   },
   {
    "id": "wtl-ev-0096",
+   "regionId": "wtl-r-0096-565-1635-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0096.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -204,6 +249,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 96,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -232,6 +279,7 @@
   },
   {
    "id": "wtl-ev-0097",
+   "regionId": "wtl-r-0097-568-1090-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0097.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -239,6 +287,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 97,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 3,
    "verdict": "rejected",
    "extraction": {
@@ -268,6 +318,7 @@
   },
   {
    "id": "wtl-ev-0098",
+   "regionId": "wtl-r-0098-77-1145-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0098.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -275,6 +326,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 98,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -303,6 +356,7 @@
   },
   {
    "id": "wtl-ev-0099",
+   "regionId": "wtl-r-0099-848-1284-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0098.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -310,6 +364,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 99,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 7,
    "verdict": "rejected",
    "extraction": {
@@ -338,6 +394,7 @@
   },
   {
    "id": "wtl-ev-0104",
+   "regionId": "wtl-r-0104-631-1136-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0104.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -345,6 +402,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 104,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -373,6 +432,7 @@
   },
   {
    "id": "wtl-ev-0105",
+   "regionId": "wtl-r-0105-698-1467-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0105.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -380,6 +440,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 105,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -408,6 +470,7 @@
   },
   {
    "id": "wtl-ev-0107",
+   "regionId": "wtl-r-0107-892-1485-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0107.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -415,6 +478,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 107,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -443,6 +508,7 @@
   },
   {
    "id": "wtl-ev-0110",
+   "regionId": "wtl-r-0110-906-1284-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0110.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -450,6 +516,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 110,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -479,6 +547,7 @@
   },
   {
    "id": "wtl-ev-0111",
+   "regionId": "wtl-r-0111-826-1634-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0111.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -486,6 +555,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 111,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -514,6 +585,7 @@
   },
   {
    "id": "wtl-ev-0115",
+   "regionId": "wtl-r-0115-319-1839-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0115.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -521,6 +593,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 115,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -549,6 +623,7 @@
   },
   {
    "id": "wtl-ev-0117",
+   "regionId": "wtl-r-0117-788-1626-green",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0117.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -556,6 +631,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 117,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 13,
    "verdict": "rejected",
    "extraction": {
@@ -585,6 +662,7 @@
   },
   {
    "id": "wtl-ev-0118",
+   "regionId": "wtl-r-0118-394-1767-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0117.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -592,6 +670,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 118,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -620,6 +700,7 @@
   },
   {
    "id": "wtl-ev-0120",
+   "regionId": "wtl-r-0120-583-1834-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0120.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -627,6 +708,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 120,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -655,6 +738,7 @@
   },
   {
    "id": "wtl-ev-0121",
+   "regionId": "wtl-r-0121-752-1343-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0121.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -662,6 +746,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 121,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 9,
    "verdict": "rejected",
    "extraction": {
@@ -690,6 +776,7 @@
   },
   {
    "id": "wtl-ev-0122",
+   "regionId": "wtl-r-0122-751-1695-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0122.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -697,6 +784,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 122,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 6,
    "verdict": "rejected",
    "extraction": {
@@ -724,6 +813,7 @@
   },
   {
    "id": "wtl-ev-0123",
+   "regionId": "wtl-r-0123-55-1774-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0123.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -731,6 +821,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 123,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -758,6 +850,7 @@
   },
   {
    "id": "wtl-ev-0124",
+   "regionId": "wtl-r-0124-177-1626-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0124.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -765,6 +858,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 124,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -793,6 +888,7 @@
   },
   {
    "id": "wtl-ev-0125",
+   "regionId": "wtl-r-0125-314-1879-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0125.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -800,6 +896,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 125,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -828,6 +926,7 @@
   },
   {
    "id": "wtl-ev-0126",
+   "regionId": "wtl-r-0126-727-1517-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0126.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -835,6 +934,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 126,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -862,6 +963,7 @@
   },
   {
    "id": "wtl-ev-0127",
+   "regionId": "wtl-r-0127-1024-1785-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0126.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -869,6 +971,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 127,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -896,6 +1000,7 @@
   },
   {
    "id": "wtl-ev-0129",
+   "regionId": "wtl-r-0129-41-1525-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0129.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -903,6 +1008,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 129,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -930,6 +1037,7 @@
   },
   {
    "id": "wtl-ev-0130",
+   "regionId": "wtl-r-0130-901-1493-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0130.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -937,6 +1045,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 130,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -966,6 +1076,7 @@
   },
   {
    "id": "wtl-ev-0132",
+   "regionId": "wtl-r-0132-613-1163-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0132.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -973,6 +1084,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 132,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -1001,6 +1114,7 @@
   },
   {
    "id": "wtl-ev-0133",
+   "regionId": "wtl-r-0133-116-1381-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0133.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1008,6 +1122,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 133,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 3,
    "verdict": "candidate",
    "extraction": {
@@ -1035,6 +1151,7 @@
   },
   {
    "id": "wtl-ev-0135",
+   "regionId": "wtl-r-0135-934-1831-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0135.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1042,6 +1159,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 135,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -1069,6 +1188,7 @@
   },
   {
    "id": "wtl-ev-0145",
+   "regionId": "wtl-r-0145-375-1565-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0145.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1076,6 +1196,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 145,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1103,6 +1225,7 @@
   },
   {
    "id": "wtl-ev-0155",
+   "regionId": "wtl-r-0155-967-1063-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0154.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1110,6 +1233,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 155,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1138,6 +1263,7 @@
   },
   {
    "id": "wtl-ev-0190",
+   "regionId": "wtl-r-0190-59-1056-red",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0190.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1145,6 +1271,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 190,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1173,6 +1301,7 @@
   },
   {
    "id": "wtl-ev-0218",
+   "regionId": "wtl-r-0218-0-1690-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0218.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1180,6 +1309,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 218,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -1210,6 +1341,7 @@
   },
   {
    "id": "wtl-ev-0219",
+   "regionId": "wtl-r-0219-915-1184-red",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0219.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1217,6 +1349,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 219,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1244,6 +1378,7 @@
   },
   {
    "id": "wtl-ev-0251",
+   "regionId": "wtl-r-0251-576-1860-green",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0251.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1251,6 +1386,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 251,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1280,6 +1417,7 @@
   },
   {
    "id": "wtl-ev-0257",
+   "regionId": "wtl-r-0257-1011-1428-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0257.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1287,6 +1425,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 257,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1314,6 +1454,7 @@
   },
   {
    "id": "wtl-ev-0294",
+   "regionId": "wtl-r-0294-675-1495-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0293.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1321,6 +1462,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 294,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -1349,6 +1492,7 @@
   },
   {
    "id": "wtl-ev-0346",
+   "regionId": "wtl-r-0346-229-1107-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0346.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1356,6 +1500,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 346,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1385,6 +1531,7 @@
   },
   {
    "id": "wtl-ev-0352",
+   "regionId": "wtl-r-0352-223-1502-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0351.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1392,6 +1539,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 352,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1420,6 +1569,7 @@
   },
   {
    "id": "wtl-ev-0359",
+   "regionId": "wtl-r-0359-0-1056-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0359.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1427,6 +1577,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 359,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1456,6 +1608,7 @@
   },
   {
    "id": "wtl-ev-0360",
+   "regionId": "wtl-r-0360-145-1056-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0359.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1463,6 +1616,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 360,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
@@ -1491,6 +1646,7 @@
   },
   {
    "id": "wtl-ev-0392",
+   "regionId": "wtl-r-0392-114-1146-yellow",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0392.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1498,6 +1654,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 392,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1526,6 +1684,7 @@
   },
   {
    "id": "wtl-ev-0395",
+   "regionId": "wtl-r-0395-901-1056-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0395.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1533,6 +1692,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 395,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1562,6 +1723,7 @@
   },
   {
    "id": "wtl-ev-0397",
+   "regionId": "wtl-r-0397-926-1066-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0397.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1569,6 +1731,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 397,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 1,
    "verdict": "rejected",
    "extraction": {
@@ -1598,6 +1762,7 @@
   },
   {
    "id": "wtl-ev-0399",
+   "regionId": "wtl-r-0399-482-1090-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0399.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1605,6 +1770,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 399,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -1634,6 +1801,7 @@
   },
   {
    "id": "wtl-ev-0400",
+   "regionId": "wtl-r-0400-476-1694-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0400.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1641,6 +1809,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 400,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 5,
    "verdict": "candidate",
    "extraction": {
@@ -1666,6 +1836,7 @@
   },
   {
    "id": "wtl-ev-0401",
+   "regionId": "wtl-r-0401-653-1500-orange",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0401.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1673,6 +1844,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 401,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 4,
    "verdict": "rejected",
    "extraction": {
@@ -1701,6 +1874,7 @@
   },
   {
    "id": "wtl-ev-0404",
+   "regionId": "wtl-r-0404-325-1079-blue",
    "kind": "image",
    "url": "https://jymiller.github.io/milbird-walk-the-line/frames/t0404.jpg",
    "linkedTo": "wtl-3167e83ea982483c",
@@ -1708,6 +1882,8 @@
    "linkedToStageName": "Utility Locates",
    "videoOffsetSeconds": 404,
    "source": "IMG_2104.MOV",
+   "sourceSha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+   "capturedAt": "2026-09-19T20:56:56Z",
    "regionCount": 2,
    "verdict": "rejected",
    "extraction": {
