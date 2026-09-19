@@ -1,0 +1,8 @@
+name = "walk-the-line-api"
+main = "worker.js"
+compatibility_date = "2026-09-19"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "DECISIONS"
+id = "beaf758828d7407a86d27c83685cb875"
