@@ -15,6 +15,8 @@ dist/
 .agents/
 .claude/skills/
 frames/
+# ...but the downscaled, web-sized copies under site/ are the published evidence.
+!site/frames/
 *.mp3
 *.mp4
 *.MOV
