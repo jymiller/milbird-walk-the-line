@@ -1,0 +1,32 @@
+{
+ "video": "IMG_2104.MOV",
+ "duration_s": 404.1,
+ "detections": 53,
+ "by_colour": {
+  "orange": 25,
+  "green": 4,
+  "yellow": 14,
+  "red": 4,
+  "blue": 6
+ },
+ "by_utility": {
+  "communications / fibre": 25,
+  "sewer, drain": 4,
+  "gas, oil, steam": 14,
+  "electric": 4,
+  "potable water": 6
+ },
+ "first_s": 13.5,
+ "last_s": 404.1,
+ "anchor": {
+  "lat": 37.7912,
+  "lon": -122.4078,
+  "accuracy_m": 7.018998,
+  "note": "single GPS point from clip metadata; per-mark coordinates are derived"
+ },
+ "provenance": {
+  "timestamps": "MEASURED \u2014 frame index / fps",
+  "colours": "MEASURED \u2014 HSV threshold against the APWA colour code",
+  "coordinates": "DERIVED \u2014 interpolated along the street axis from one GPS anchor in the clip metadata. Not surveyed."
+ }
+}

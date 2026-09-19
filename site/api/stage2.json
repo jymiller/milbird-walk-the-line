@@ -1,0 +1,15 @@
+{
+ "stage": 2,
+ "stageName": "Utility Locates",
+ "status": "proposed",
+ "quantity": 53,
+ "unit": "each",
+ "note": "Detected from sidewalk video: 53 locate marks, 25 orange, 14 yellow, 6 blue, 4 green, 4 red. Machine-proposed from video evidence \u2014 not confirmed.",
+ "evidence": {
+  "kind": "video",
+  "source": "IMG_2104.MOV",
+  "frames_endpoint": "/api/frames/<t>.jpg",
+  "geojson_endpoint": "/api/locates"
+ },
+ "requiresHumanDecision": true
+}
