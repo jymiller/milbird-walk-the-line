@@ -1,19 +1,19 @@
 {
  "ok": true,
- "detections": 53,
  "video": "IMG_2104.MOV",
  "duration_s": 404.1,
- "anchor": {
-  "lat": 37.7912,
-  "lon": -122.4078,
-  "accuracy_m": 7.018998,
-  "note": "single GPS point from clip metadata; per-mark coordinates are derived"
- },
+ "colour_regions": 124,
+ "frames_with_colour": 49,
+ "machine_candidates": 2,
+ "human_confirmed": 0,
  "endpoints": [
-  "/api/locates",
-  "/api/summary",
-  "/api/stage2",
-  "/api/frames/<t>.jpg",
-  "/"
- ]
+  "/api/health.json",
+  "/api/locates.json",
+  "/api/summary.json",
+  "/api/rules.json",
+  "/api/stage2.json"
+ ],
+ "note": "api_version 1 reported 53 detections. Those were colour matches, not locate marks. This version reports the full pipeline.",
+ "api_version": "2.0",
+ "generated": "2026-09-19T23:19:19+00:00"
 }
