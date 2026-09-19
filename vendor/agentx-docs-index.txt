@@ -1,0 +1,109 @@
+# AgentX
+
+- [Introduction](https://developers.agentx.so/introduction.md): Trace, monitor, evaluate, and improve AI agents - self-hosted, framework-agnostic, with online and offline evaluation
+- [Quickstart](https://developers.agentx.so/quickstart.md): Run the engine, open the dashboard, and see your first trace in five minutes
+- [Authentication](https://developers.agentx.so/authentication.md): Project API keys, the dashboard connect flow, and multi-user mode (AGENTX_AUTH)
+- [Concepts](https://developers.agentx.so/concepts.md): The core vocabulary - traces, sessions, scorers, signals, datasets, runs, and how they relate
+- [Errors](https://developers.agentx.so/errors.md): Error response shapes, status codes, Retry-After behavior, and retry guidance
+- [Self-Host Overview](https://developers.agentx.so/self-host/overview.md): The full Trace, Monitor, Evaluate, and Improve stack on your own machine - no account, bring your own LLM keys
+- [Installation](https://developers.agentx.so/self-host/installation.md): curl | bash, the Python SDK launcher, Docker, or build from source - then connect the dashboard and SDK
+- [Configuration](https://developers.agentx.so/self-host/configuration.md): Every flag and environment variable with its default, deployment tiers, Prometheus metrics, the audit trail, and the end-to-end smoke test
+- [Backup & export](https://developers.agentx.so/self-host/backup.md): Bulk NDJSON export, incremental snapshots, and the restore runbook
+- [High availability & DR](https://developers.agentx.so/self-host/high-availability.md): The single-writer topology, scaling by tier, seconds-long upgrade windows, and recovery objectives
+- [Python SDK Overview](https://developers.agentx.so/sdk/overview.md): One client for tracing, monitoring, evaluations, prompts, and CI gates
+- [Python SDK Reference](https://developers.agentx.so/sdk/python-reference.md): Complete API reference for agentx-python
+- [Coming from DeepEval](https://developers.agentx.so/monitor/coming-from-deepeval.md): Metric-name mapping, what carries over, and what works differently
+- [Tracing](https://developers.agentx.so/sdk/tracing.md): Record agent runs from any Python framework
+- [Sessions](https://developers.agentx.so/trace/sessions.md): Conversation-level observability: turns, the Session Baseline Judge, and session-scoped judging
+- [Span Kinds](https://developers.agentx.so/trace/span-kinds.md): Tell the engine what each step is - an LLM call, a tool call, a retrieval - instead of letting it guess
+- [Platform Detection](https://developers.agentx.so/trace/platform-detection.md): Tracing is platform agnostic - every trace says which agent framework produced it, whether AgentX has an integration for it or not
+- [OpenTelemetry](https://developers.agentx.so/trace/opentelemetry.md): Send traces from any OTel-instrumented app - no AgentX SDK required
+- [LangChain](https://developers.agentx.so/sdk/integrations/langchain.md): Auto-trace every LangChain chain and agent run with AgentXCallbackHandler
+- [CrewAI](https://developers.agentx.so/sdk/integrations/crewai.md): Trace CrewAI crew runs with AgentXCrewObserver
+- [OpenAI Agents SDK](https://developers.agentx.so/sdk/integrations/openai-agents.md): Trace OpenAI agent runs with AgentXTracingProcessor
+- [OpenAI](https://developers.agentx.so/sdk/integrations/openai.md): Auto-trace raw OpenAI SDK calls with patch_openai_client
+- [NVIDIA NIM](https://developers.agentx.so/sdk/integrations/nvidia-nim.md): Auto-trace NVIDIA NIM inference microservices with patch_nim_client
+- [Anthropic](https://developers.agentx.so/sdk/integrations/anthropic.md): Auto-trace Anthropic SDK calls with patch_anthropic_client
+- [Google](https://developers.agentx.so/sdk/integrations/google.md): Trace Google ADK agents and Gemini API calls
+- [LiteLLM](https://developers.agentx.so/sdk/integrations/litellm.md): Auto-trace every LiteLLM completion call with AgentXLiteLLMLogger
+- [LlamaIndex](https://developers.agentx.so/sdk/integrations/llamaindex.md): Auto-trace query engines, chat engines, and agents with AgentXLlamaIndexHandler
+- [AutoGen](https://developers.agentx.so/sdk/integrations/autogen.md): Trace Microsoft AutoGen agent and team runs with AgentXAutoGenObserver
+- [Moveworks](https://developers.agentx.so/sdk/integrations/moveworks.md): Import Moveworks AI Assistant activity into AgentX via the Data API
+- [Databricks](https://developers.agentx.so/sdk/integrations/databricks.md): Trace and evaluate agents built on Databricks (Agent Bricks / Mosaic AI Agent Framework) via MLflow Tracing
+- [Scorers](https://developers.agentx.so/monitor/scorers.md): One catalog for everything that can score your traffic - nothing runs until you enable it
+- [Scorer Groups](https://developers.agentx.so/monitor/scorer-groups.md): Compose scorers of any kind into one 0-10 score with weights and must-pass gates
+- [LLM Judge Scorers](https://developers.agentx.so/monitor/judge-scorers.md): A real LLM judge scoring live traffic continuously, per trace or per session
+- [Patterns](https://developers.agentx.so/monitor/patterns.md): Rule-based failure detection - phrase, regex, and semantic conditions that turn matching traces into signals
+- [External & Code Scorers](https://developers.agentx.so/monitor/custom-evaluators.md): Your own scoring logic - as an HTTP endpoint, or a script run in-engine
+- [Code Scorers](https://developers.agentx.so/evaluation/code-scorers.md): Grade eval results with exact JavaScript, alongside the judge and similarity metrics
+- [User Feedback](https://developers.agentx.so/monitor/user-feedback.md): Forward your users' thumbs up/down votes - the cheapest ground truth there is
+- [Outcomes & Judge Calibration](https://developers.agentx.so/monitor/outcomes.md): Report what actually happened, and measure the judges against it
+- [Human Review Queue](https://developers.agentx.so/monitor/review-queue.md): Label ordinary traffic, not just what got flagged, and measure the judge against it
+- [Online Evaluation (Monitor)](https://developers.agentx.so/sdk/monitor.md): Continuous evaluation of live production traffic - deterministic patterns and LLM-as-judge scoring at ingest, surfaced as triage-ready signals.
+- [Multi-Turn Session Evaluation](https://developers.agentx.so/monitor/session-evaluation.md): Judge whole conversations, not just single responses - automatically, once the conversation goes quiet
+- [Topics](https://developers.agentx.so/monitor/topics.md): What your agents are actually being asked, classified and mapped
+- [Automation Rules](https://developers.agentx.so/monitor/rules.md): Route matching traffic to human review, into a dataset, or out to a webhook
+- [Alert Rules](https://developers.agentx.so/monitor/alert-rules.md): Page Slack, Teams, PagerDuty, email, or a webhook when a KPI crosses a threshold
+- [Model Comparison](https://developers.agentx.so/monitor/model-comparison.md): Per-model health, failure rate, latency, and cost aggregated from real traffic
+- [Model Portability](https://developers.agentx.so/evaluation/model-portability.md): Replay a captured trace against alternative models for a cost/latency/quality estimate
+- [Offline Evaluation](https://developers.agentx.so/sdk/evaluations/overview.md): Score any agent from any framework or provider against a dataset - LLM-judged, on demand, before or after you ship
+- [Installation](https://developers.agentx.so/sdk/evaluations/installation.md): Install the AgentX Python SDK and the framework extras you need
+- [Quick Start](https://developers.agentx.so/sdk/evaluations/quickstart.md): Run your first custom agent evaluation in a few lines
+- [Build Dataset](https://developers.agentx.so/sdk/evaluations/build-dataset.md): Create evaluation datasets and test cases with the Python SDK
+- [Evaluation Settings](https://developers.agentx.so/sdk/evaluations/evaluation-settings.md): Build a standalone, reusable grading config decoupled from any one dataset
+- [EvaluationSubject Fields](https://developers.agentx.so/sdk/evaluations/evaluation-subject.md): Describe the agent being evaluated so analysis can check instruction adherence
+- [AI Analysis Report](https://developers.agentx.so/sdk/evaluations/analysis-report.md): What .analyze() returns, strengths, weaknesses, instruction adherence, and recommendations
+- [Head-to-Head Comparison](https://developers.agentx.so/evaluation/head-to-head.md): Ask which run answered better, instead of trusting two averages a tenth of a point apart
+- [Datasets from Production](https://developers.agentx.so/evaluation/datasets-from-production.md): Turn a real trace, session, or signal into a golden dataset case in two clicks
+- [RAG Evaluation](https://developers.agentx.so/evaluation/rag.md): The five RAG metrics, online and offline, with context captured automatically from your traces
+- [Version History](https://developers.agentx.so/evaluation/version-history.md): Every dataset and evaluator edit, saved as a browsable version
+- [Dataset Coverage](https://developers.agentx.so/evaluation/dataset-coverage.md): Does your eval dataset look anything like production? Insights joins classified traffic to your cases and shows which high-traffic topics have no test behind them
+- [Playground](https://developers.agentx.so/evaluation/playground.md): Test prompts, models, and tools against real dataset cases interactively
+- [Simulate Conversation](https://developers.agentx.so/evaluation/simulate-conversation.md): A persona-driven simulated user converses with your prompt, model, and tools - judged, recorded, and convertible into regression tests
+- [Examples](https://developers.agentx.so/sdk/evaluations/examples/overview.md): The common pattern behind every framework integration
+- [OpenAI](https://developers.agentx.so/sdk/evaluations/examples/openai.md): Evaluate a plain OpenAI chat completions agent
+- [OpenAI Agents SDK](https://developers.agentx.so/sdk/evaluations/examples/openai-agents.md): Evaluate an agent built on the OpenAI Agents SDK (the `agents` / `openai-agents` package)
+- [Anthropic Claude](https://developers.agentx.so/sdk/evaluations/examples/anthropic.md): Evaluate an agent built on the Anthropic Messages API
+- [LangChain](https://developers.agentx.so/sdk/evaluations/examples/langchain.md): Evaluate a LangChain chain or agent
+- [CrewAI](https://developers.agentx.so/sdk/evaluations/examples/crewai.md): Evaluate a CrewAI crew
+- [AutoGen / AG2](https://developers.agentx.so/sdk/evaluations/examples/autogen.md): Evaluate a conversation between AutoGen (or AG2) ConversableAgents
+- [LlamaIndex](https://developers.agentx.so/sdk/evaluations/examples/llamaindex.md): Evaluate a LlamaIndex RAG query engine
+- [HTTP Endpoint](https://developers.agentx.so/sdk/evaluations/examples/http-endpoint.md): Evaluate an agent exposed as a web service, without writing a Python callable
+- [Submit Pre-Defined Results](https://developers.agentx.so/sdk/evaluations/examples/precomputed-results.md): Score outputs you already generated, without re-running the agent
+- [Tools & MCPs](https://developers.agentx.so/improve/tool-schemas.md): A version-scoped registry for tool definitions, improved from real failures
+- [MCPs](https://developers.agentx.so/improve/mcp.md): Register tools from remote MCP servers - listed, reviewed, improved like any tool, and executed over the real protocol in Playground runs
+- [Prompt Management](https://developers.agentx.so/improve/prompt-management.md): A version-scoped prompt registry with evidence-fed improvement proposals
+- [Auto-improve](https://developers.agentx.so/improve/auto-improve.md): Confirmed production failures become an improvement report, and the auto-improve skill applies the fixes to your source
+- [Validating Proposals](https://developers.agentx.so/improve/validating-proposals.md): Every proposed prompt or tool-schema rewrite ships with a measured verdict before a human publishes it
+- [Comparing Versions](https://developers.agentx.so/improve/comparing-versions.md): Run your agent twice, tag each run, let AgentX tell you which version won
+- [Claude Code](https://developers.agentx.so/improve/claude-code.md): The AgentX plugin (/instrument, /run-eval, /eval-fix, /auto-improve) and the prompt-improvement skill - drive the whole loop from Claude Code, no engine-side LLM key needed
+- [Self-Host CI Gate](https://developers.agentx.so/integrations/self-host-ci.md): Block a merge when your agent's eval score drops - an exit-code contract over a normal eval run
+- [CI/CD Evaluation](https://developers.agentx.so/sdk/ci-cd.md): Gate agent releases with eval test sets
+- [TypeScript CI SDK](https://developers.agentx.so/sdk/ts-eval.md): @agentx/eval - the minimum eval slice for a TypeScript pipeline: submit, finalize, gate
+- [GitHub Actions](https://developers.agentx.so/integrations/github-actions.md): Gate PRs with the hosted AgentX CI/CD evaluation, using GitHub Actions as the runner
+- [Webhooks](https://developers.agentx.so/integrations/webhook.md): Receive CI gate results via HTTP callback
+- [Submit Trace](https://developers.agentx.so/api-reference/tracing/submit-trace.md): Ingest a single span or agent run into the engine's trace store
+- [List Traces](https://developers.agentx.so/api-reference/tracing/list-traces.md): Cursor-paginated list of ingested traces with database-side search and filters
+- [Evaluate Trace](https://developers.agentx.so/api-reference/tracing/evaluate-trace.md): Score a recorded trace against a dataset or grading config without re-running the agent
+- [Custom Evaluations Overview](https://developers.agentx.so/api-reference/custom-eval/overview.md): Run evaluations programmatically against any external agent and score with the LLM judge
+- [Create Dataset](https://developers.agentx.so/api-reference/custom-eval/create-dataset.md): Create an evaluation dataset with questions and scoring configuration
+- [List Datasets](https://developers.agentx.so/api-reference/custom-eval/list-datasets.md): List the project's evaluation datasets
+- [Get Dataset](https://developers.agentx.so/api-reference/custom-eval/get-dataset.md): Fetch a single evaluation dataset by id
+- [Create Run](https://developers.agentx.so/api-reference/custom-eval/create-run.md): Start a new evaluation run against a dataset
+- [Submit Results](https://developers.agentx.so/api-reference/custom-eval/submit-results.md): Submit a batch of agent outputs for synchronous judge scoring
+- [Get Missing Results](https://developers.agentx.so/api-reference/custom-eval/missing-results.md): Resume support: the idempotency keys a run has already accepted
+- [Finalize Run](https://developers.agentx.so/api-reference/custom-eval/finalize-run.md): Mark a run as complete and get the final rating statistics
+- [Analyze Run](https://developers.agentx.so/api-reference/custom-eval/analyze-run.md): Run AI analysis over a run's results and store the structured report
+- [Get Report](https://developers.agentx.so/api-reference/custom-eval/get-report.md): Get the stored analysis report with statistics and low-scoring cases
+- [Get Run](https://developers.agentx.so/api-reference/custom-eval/get-run.md): Get a single evaluation run with statistics and per-result scores
+- [List Runs](https://developers.agentx.so/api-reference/custom-eval/list-runs.md): List the project's evaluation runs, newest first
+- [List Models](https://developers.agentx.so/api-reference/custom-eval/list-models.md): List the project's model catalog used for judge selection and cost estimation
+- [CI/CD Overview](https://developers.agentx.so/api-reference/ci-cd/overview.md): Gate merges and deploys on evaluation quality with the run gate endpoint
+- [Create CI Run](https://developers.agentx.so/api-reference/ci-cd/create-run.md): Start the evaluation run a CI pipeline will gate on
+- [Get Test Cases](https://developers.agentx.so/api-reference/ci-cd/get-test-cases.md): Read the dataset's questions to drive a CI evaluation
+- [Submit Result](https://developers.agentx.so/api-reference/ci-cd/submit-result.md): Submit and score CI case results as the pipeline produces them
+- [Finalize CI Run](https://developers.agentx.so/api-reference/ci-cd/finalize-run.md): Close the run before computing the CI gate
+- [Get CI Gate](https://developers.agentx.so/api-reference/ci-cd/get-gate.md): Compute the pass/fail verdict for a finalized run
+- [List Agents](https://developers.agentx.so/api-reference/tracked-agents/list.md): List every agent the project knows about, with each one's monitoring profile
+- [Register Agent](https://developers.agentx.so/api-reference/tracked-agents/add.md): Explicitly register an agent identity in the project
+- [Get Agent](https://developers.agentx.so/api-reference/tracked-agents/get.md): Fetch a single registered agent by id

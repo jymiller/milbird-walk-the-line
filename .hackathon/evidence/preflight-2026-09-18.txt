@@ -1,0 +1,28 @@
+== local toolchain ==
+  [32mPASS[0m node v26.8.1
+  [32mPASS[0m npm 11.19.0
+  [32mPASS[0m python3 Python 3.14.7
+  [32mPASS[0m uv uv 0.12.15 (d35f1f270 2026-09-15 aarch64-apple-darwin)
+  [32mPASS[0m docker Docker version 29.8.0, build 88096ef
+  [32mPASS[0m git git version 2.54.0 (Apple Git-157)
+  [32mPASS[0m gh gh version 2.98.0 (2026-08-20)
+  [32mPASS[0m venv Python 3.12.14
+  [32mPASS[0m agentx launcher present
+  [32mPASS[0m edgeone CLI present
+  [32mPASS[0m edgeone-makers-tools skill installed
+
+== agentx engine (load-bearing for Track 2) ==
+  [32mPASS[0m engine healthy on :4700
+  [32mPASS[0m API key accepted (X-API-Key)
+
+== vendor endpoints (reachability only) ==
+  [32mPASS[0m EdgeOne Makers docs reachable (200)
+  [32mPASS[0m EdgeOne register reachable (200)
+  [32mPASS[0m Memories.ai docs reachable (200)
+  [32mPASS[0m Memories.ai API reachable (200)
+  [32mPASS[0m AgentX docs reachable (200)
+  [32mPASS[0m VeloDB reachable (200)
+  [32mPASS[0m Submission platform reachable (200)
+  [32mPASS[0m Handbook reachable (200)
+
+== summary: 21 pass, 0 fail ==

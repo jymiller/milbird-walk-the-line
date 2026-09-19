@@ -1,0 +1,61 @@
+{
+  "handoff_version": "1.0",
+  "event_key": "the-executable-world-a-full-stack-ai-hackathon-m-19b2b4249d",
+  "event": "The Executable World: A Full Stack AI Hackathon & Mixer",
+  "date": "2026-09-19",
+  "location": "724 Pine St, San Francisco, CA 94108",
+  "format": "in person, one day",
+  "participation_state": "prepped",
+  "sources": {
+    "platform": "https://figstudio-hackathon-production.up.railway.app/e/executable-world-2026",
+    "handbook": "https://agentx-ai.notion.site/The-Executable-World-3ab03378208e80579131cc26b769a94f",
+    "luma": "https://luma.com/exruwpkp",
+    "authority_note": "The Notion handbook is the organizers' stated source of truth where anything disagrees."
+  },
+  "timing_local": {
+    "doors": "08:30",
+    "checkin_and_team_formation": "09:00-10:00",
+    "opening_remarks": "10:00-10:10",
+    "sponsor_workshops": "10:10-10:30",
+    "build_sprint": "10:30-15:15",
+    "submission_window": "15:15-15:30",
+    "deadline": "15:30",
+    "judging": "16:40-17:00",
+    "demos_and_awards": "17:00-18:00",
+    "mixer": "18:00-19:00"
+  },
+  "gate": "submitted",
+  "deadline_local": "2026-09-19T15:30:00-07:00",
+  "feature_freeze_local": "2026-09-19T14:15:00-07:00",
+  "build_minutes_available": 285,
+  "rubric": [
+    {"criterion": "Technical execution", "points": 25},
+    {"criterion": "Problem relevance", "points": 20},
+    {"criterion": "Innovation", "points": 20},
+    {"criterion": "Product experience", "points": 15},
+    {"criterion": "Impact and scalability", "points": 10},
+    {"criterion": "Demo quality", "points": 10}
+  ],
+  "tracks": [
+    {"id": "track1", "name": "AI Assistants", "anchor_sponsor": "Tencent EdgeOne Makers"},
+    {"id": "track2", "name": "Production ready AI Agent", "anchor_sponsor": "AgentX"}
+  ],
+  "prizes": {
+    "unit": "AWS credits",
+    "per_track": [
+      {"places": "1st-3rd", "amount_usd": 25000, "count": 3},
+      {"places": "4th-6th", "amount_usd": 4500, "count": 3}
+    ],
+    "total_award_slots": 12,
+    "platform_headline_usd": 180000,
+    "luma_headline_usd": 270000,
+    "note": "Notion per-track table computes to $177,000. Platform says $180,000, Luma says $270,000. Treat the headline as unresolved; the per-track table is the actionable figure."
+  },
+  "team": {"suggested_size": "2-5", "solo_permitted": "not stated - confirm at check-in"},
+  "co_hosts": ["VeloDB", "AgentX", "Memories.ai", "AWS", "Tencent EdgeOne", "WorkBuddy"],
+  "contacts": ["contact@figstudio.vc", "lumagen2house@gmail.com"],
+  "approval_boundaries": [
+    "spending", "registration", "organizer or judge contact",
+    "submission", "public publication or deployment", "commit or push"
+  ]
+}

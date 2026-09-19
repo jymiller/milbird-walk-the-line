@@ -1,0 +1,77 @@
+﻿Tencent EdgeOne Makers Onboarding Guide
+
+
+- Step-by-step tutorial video: SF Hackathon demo.mp4
+- EdgeOne Makers Account Registration: https://edgeone.ai/register?s_url=https://console.tencentcloud.com/edgeone
+
+
+
+
+Tencent EdgeOne Makers is a web and AI agent development and hosting platform that gets your ideas live fast — deploy agents, frontend pages, and dynamic APIs in minutes. Every deployed agent comes with batteries included: agent runtime, sandbox tools, conversation memory, full-chain tracing, and built-in models. Makers supports all mainstream agent frameworks, including Claude, OpenAI, LangChain, LangGraph, and CrewAI, with no language restrictions (JS / Python). The following instructions will help you get started with EdgeOne Makers quickly.
+
+
+Install EdgeOne Makers Agent Tooling
+1.  Install EdgeOne Makers Skills:
+● Method 1: Ask your AI IDE in natural language to install the skill, e.g. “Help me install this skill: https://github.com/TencentEdgeOne/edgeone-makers-tools”。
+You can also copy and paste the following command into your AI IDE:
+
+Install the edgeone-makers-tools skill with `npx skills add TencentEdgeOne/edgeone-makers-tools`. After that, whenever you run EdgeOne CLI deploy commands, always pass `--area overseas`.
+  
+
+
+
+● Method 2: Install via CLI
+npx skills add TencentEdgeOne/edgeone-makers-tools
+
+
+2.  Relevant docs:
+* Skills:
+GitHub repo: https://github.com/TencentEdgeOne/edgeone-makers-tools
+SkillHub: https://skillhub.cn/skills/user_cdc69ffo/edgeone-makers-tools
+Doc: Deploy Projects to EdgeOne Makers with Skills
+* MCP: Makers MCP
+* Plugin: EdgeOne Makers Tools: AI Coding Plugin
+* Learn more: https://pages.edgeone.ai/document/product-introduction
+ 
+How to Deploy Your Project to EdgeOne Makers in AI IDE
+After installing EdgeOne Makers Skills / MCP / plugin, you can deploy your web apps or agents to EdgeOne Makers within minutes.
+1.  Tell your AI IDE in natural language, e.g. "Publish/deploy this agent to EdgeOne Makers"
+2.   Makers supports login-free deployment: you can deploy your project first and claim it later by logging in on the dashboard.
+  
+ 
+Note: If you are deploying an agent that requires AI gateway credentials, we recommend logging in first so that the agent works properly. You can select the Global site when logging in.
+  
+
+3. Your browser will open the login page automatically. Register an account if you don't have one yet.
+  
+
+4. After logging in, simply wait for the deployment to complete. Once your project is live, open the preview link to view it.
+  
+
+You can also go to the dashboard to deploy your projects.
+* Method 1: importing a git repo: https://pages.edgeone.ai/document/importing-a-git-repository 
+* Method 2: uploading a file/folder: https://pages.edgeone.ai/document/direct-upload 
+
+
+EdgeOne Makers Model Gateway
+1.  EdgeOne Makers provides 500,000 tokens per person per month for calling built-in models. The available models are:
+@makers/hy3
+@makers/hy3-preview
+@makers/deepseek-v4-pro
+@makers/deepseek-v4-flash
+@makers/minimax-m3
+@makers/minimax-m2.7
+@makers/kimi-k2.6
+ 
+2.  You can view model usage on the dashboard under Models.
+  
+
+ 
+3.  Makers Models also supports proxying requests to multiple model vendors. You can bind each vendor's API key on the Models page of the dashboard.
+Go to Models > Provider Keys to add your API keys.
+Learn more: https://pages.edgeone.ai/document/models-vendor-keys-openai   
+
+
+Discover More About EdgeOne Makers
+Homepage: https://pages.edgeone.ai/?from=sfhackathon 
+Developer docs: https://pages.edgeone.ai/document/product-introduction

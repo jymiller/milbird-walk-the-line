@@ -1,0 +1,20 @@
+engine: http://localhost:4700/api/v1  ping={'ok': True, 'base_url': 'http://localhost:4700/api/v1'}
+PASS: span 'preflight-6882b299' read back after 1 poll(s).
+{
+  "_id": "H7FhehcJbk_J-wHcaGwAU",
+  "name": "preflight-6882b299",
+  "input": {
+    "query": "does the executable world trace path work?"
+  },
+  "output": "echo::does the executable world trace path work?",
+  "latencyMs": 0,
+  "sessionId": "sdk_ab70acd0d3f34392a2a36d81b5ec206e",
+  "spanId": "73fec47494b047e88562c73141a81cc1",
+  "spanKind": "chain",
+  "startedAt": "2026-09-19T00:48:05.638Z",
+  "source": "sdk",
+  "createdAt": "2026-09-19T00:48:05.638Z",
+  "inputTokens": null,
+  "outputTokens": null,
+  "judgeScores": null
+}
