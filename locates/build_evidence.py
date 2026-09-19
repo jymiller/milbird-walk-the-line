@@ -15,11 +15,42 @@ Writes:
     site/frames/tNNNN.jpg      the marked frames, downscaled for the web
     site/api/evidence.json     evidence items, each linked to the proposal
 """
-import json, os, sys, shutil, subprocess, datetime
+import json, os, sys, shutil, subprocess, datetime, hashlib
 from collections import defaultdict
 
 BASE = "https://jymiller.github.io/milbird-walk-the-line"
 FRAME_W = 720          # enough to see paint; small enough to ship 53 of them
+
+# The clip this run is about. An adjudication screen asks four things of any
+# evidence it is shown — what is it, when was it taken, has it been altered,
+# and what does it cover — so answer all four rather than only the verdict.
+SOURCE = {
+    "file": "IMG_2104.MOV",
+    "sha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
+    "capturedAt": "2026-09-19T20:56:56Z",
+    "durationSeconds": 404.1,
+    "frameSize": [1080, 1920],
+}
+# Where the finding applies. Without this an ingest has to hard-code the ids,
+# and a reviewer cannot tell which stretch of street was actually walked.
+SUBJECT = {
+    "street": "Pine St, San Francisco",
+    "segmentDescription": "one continuous walk, filmed east-west at walking pace",
+    "gpsAnchor": {"lat": 37.7912, "lon": -122.4078, "accuracyMetres": 7.0},
+    "stageName": "Utility Locates",
+    "workTypeCode": "LOCATE",
+    "unit": "each",
+}
+# What this run does and does not cover. An adjudicator refusing a claim on the
+# strength of one clip needs to know it is one clip.
+COVERAGE = {
+    "kind": "partial",
+    "basis": "a single 404-second walk sampled at 1 frame per second",
+    "framesSampled": 405,
+    "framesWithColourMatch": 49,
+    "note": "This is one pass along one side of one street. It is evidence about "
+            "what the camera saw, not a survey of the whole site.",
+}
 
 # The thresholds classify.py decided against, so an explanation can quote both
 # the measured value and the limit it failed.
@@ -95,15 +126,22 @@ def main():
         regions = sorted(by_t[t], key=lambda x: -x["area"])
         best = regions[0]
         candidates = [r for r in regions if r["verdict"] == "candidate"]
+        # A stable id per region, so a reviewer can cite one, a UI can key on
+        # one, and a second run can be diffed against this one.
+        bx = best.get("bbox") or [0, 0, 0, 0]
+        region_id = f"wtl-r-{t:04d}-{bx[0]}-{bx[1]}-{best['colour']}"
         items.append({
             "id": f"wtl-ev-{t:04d}",
+            "regionId": region_id,
             "kind": "image",
             "url": url,
             "linkedTo": "wtl-3167e83ea982483c",
             "linkedToStage": 2,
             "linkedToStageName": "Utility Locates",
             "videoOffsetSeconds": t,
-            "source": "IMG_2104.MOV",
+            "source": SOURCE["file"],
+            "sourceSha256": SOURCE["sha256"],
+            "capturedAt": SOURCE["capturedAt"],
             "regionCount": len(regions),
             "verdict": "candidate" if candidates else "rejected",
             "extraction": {
@@ -128,6 +166,9 @@ def main():
     out = {
         "api_version": "2.0",
         "generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "source": SOURCE,
+        "subject": SUBJECT,
+        "coverage": COVERAGE,
         "proposal": {
             "externalId": "wtl-3167e83ea982483c",
             "stage": 2, "stageName": "Utility Locates",
