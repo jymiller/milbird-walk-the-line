@@ -198,6 +198,24 @@ border-radius:0 10px 10px 0;padding:14px 16px;margin-bottom:9px}
 .note{font-size:14.5px;color:var(--muted);margin:12px 0 0;max-width:70ch}
 code{font-family:var(--mono);font-size:.9em;background:var(--sunk);border:1px solid var(--line);
 border-radius:3px;padding:1px 5px}
+.sign{background:var(--surface);border:1px solid var(--line2);border-radius:12px;padding:20px;margin:0 0 16px}
+.sign .q{font-family:var(--disp);font-weight:700;font-size:clamp(17px,2.4vw,23px);line-height:1.2;
+margin:0 0 16px;letter-spacing:-.015em}
+.sign label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:600}
+.sign input,.sign textarea{width:100%;font-family:var(--body);font-size:16px;padding:11px 13px;
+border:1px solid var(--line2);border-radius:8px;background:var(--paper);color:var(--ink);
+margin-bottom:14px;resize:vertical}
+.sign input:focus,.sign textarea:focus{outline:2px solid var(--comms);outline-offset:1px;border-color:var(--comms)}
+.sign .btns{display:flex;gap:9px;flex-wrap:wrap}
+.sign button{font-family:var(--body);font-weight:600;font-size:15.5px;padding:11px 24px;border-radius:9px;
+border:1px solid var(--line2);background:var(--surface);color:var(--ink);cursor:pointer}
+.sign button:hover{background:var(--sunk)}
+.sign button.ok{background:var(--sewer);border-color:var(--sewer);color:#fff}
+.sign button.no{border-color:var(--elec);color:var(--elec)}
+.sign button:disabled{opacity:.5;cursor:default}
+.msg{font-size:14.5px;margin:12px 0 0;min-height:1.3em}
+.msg.err{color:var(--elec)}.msg.ok{color:var(--sewer)}
 @media(max-width:620px){.fun{grid-template-columns:repeat(2,1fr)}.ck{grid-template-columns:1fr;gap:4px}}
 </style></head><body><div class="w">
 <p class="eyebrow">Walk the Line &middot; Pine Street, San Francisco</p>
@@ -220,6 +238,21 @@ quantity ${prop.quantity} ${prop.unit}, status <b>${prop.status}</b>. ${DATA.evi
 <p class="note">Served ready-made at <code>/v1/checks</code> as <code>{code, passed, severity, message}</code>
 &mdash; no mapping layer needed.</p>
 
+<h2>Record a decision</h2>
+<div class="sign">
+  <p class="q">Accept that no utility locate marking exists on this segment?</p>
+  <label for="rv">Reviewer &mdash; required</label>
+  <input id="rv" placeholder="Your name" autocomplete="name">
+  <label for="rs">Reason &mdash; required to refuse or correct</label>
+  <textarea id="rs" rows="2" placeholder="Why"></textarea>
+  <div class="btns">
+    <button class="ok" data-d="confirmed">Confirm</button>
+    <button data-d="corrected">Correct</button>
+    <button class="no" data-d="refused">Refuse</button>
+  </div>
+  <p class="msg" id="msg"></p>
+</div>
+
 <h2>Decisions recorded</h2>
 <div id="log">loading&hellip;</div>
 <p class="note">Append-only and hash-chained. A decision without a named reviewer is refused; a refusal
@@ -240,7 +273,7 @@ without a reason is refused. Refusals are kept beside confirmations.</p>
 <a href="https://github.com/jymiller/milbird-walk-the-line">the pipeline</a>.</p>
 </div>
 <script>
-fetch('/v1/decisions').then(r=>r.json()).then(d=>{
+function render(d){
   var el=document.getElementById('log');
   if(!d.count){el.innerHTML='<p class="note">No decisions recorded yet.</p>';return}
   el.innerHTML=d.entries.map(function(e){
@@ -248,7 +281,32 @@ fetch('/v1/decisions').then(r=>r.json()).then(d=>{
       '</b> &mdash; '+e.reviewer+(e.reason?'<p class="r">'+e.reason+'</p>':'')+
       '<p class="h">'+e.prevHash.slice(0,12)+'&hellip; &rarr; '+e.hash.slice(0,12)+'&hellip;</p></div>';
   }).join('')+'<p class="note">Chain intact: <b>'+d.chainIntact+'</b></p>';
-}).catch(function(){document.getElementById('log').innerHTML='<p class="note">Log unavailable.</p>'});
+}
+function load(){return fetch('/v1/decisions').then(function(r){return r.json()}).then(render)}
+document.querySelectorAll('.sign button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var msg=document.getElementById('msg');
+    var btns=document.querySelectorAll('.sign button');
+    msg.className='msg';msg.textContent='Recording\u2026';
+    btns.forEach(function(x){x.disabled=true});
+    fetch('/v1/decisions',{method:'POST',headers:{'content-type':'application/json'},
+      body:JSON.stringify({decision:b.dataset.d,
+        reviewer:document.getElementById('rv').value,
+        reason:document.getElementById('rs').value})})
+    .then(function(r){return r.json().then(function(j){return{ok:r.ok,j:j}})})
+    .then(function(res){
+      btns.forEach(function(x){x.disabled=false});
+      if(!res.ok){msg.className='msg err';msg.textContent=res.j.error||'Rejected.';return}
+      msg.className='msg ok';
+      msg.textContent='Recorded as #'+res.j.entry.seq+'. It cannot be edited or removed.';
+      document.getElementById('rs').value='';
+      return load();
+    })
+    .catch(function(){btns.forEach(function(x){x.disabled=false});
+      msg.className='msg err';msg.textContent='Could not reach the API.'});
+  });
+});
+load().catch(function(){document.getElementById('log').innerHTML='<p class="note">Log unavailable.</p>'});
 </script></body></html>`;
 }
 
