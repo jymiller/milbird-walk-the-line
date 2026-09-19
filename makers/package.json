@@ -1,0 +1,5 @@
+{
+  "name": "walk-the-line",
+  "type": "module",
+  "dependencies": { "@edgeone/pages-blob": "^0.0.14" }
+}

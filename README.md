@@ -6,6 +6,20 @@
 
 **Prep notebook:** https://claude.ai/artifact/2MuMMnjtPFSoBEHPSgLe2G
 
+## Live
+
+| | |
+|---|---|
+| Locate inventory + API | https://jymiller.github.io/milbird-walk-the-line/ |
+| Write-up | https://claude.ai/artifact/7zpNEbGd88rbQGuLsEFFBJ |
+| Submitted demo | https://walkthelin3.replit.app/ |
+| App repo | https://github.com/CloudCorpRecords/not_a_hacker_thing |
+
+Endpoints: `/api/locates.json` · `/api/summary.json` · `/api/stage2.json`
+Published from the `gh-pages` branch. The EdgeOne Makers implementation (Blob + Cloud
+Functions) is in `makers/` — correct against their SDK, blocked on account credits.
+
+
 Authority for this build, its trace, and its submission evidence. Campaign
 strategy stays in `hackathon-prep`. Source of truth for rules is the organizers'
 [Notion handbook](https://agentx-ai.notion.site/The-Executable-World-3ab03378208e80579131cc26b769a94f).

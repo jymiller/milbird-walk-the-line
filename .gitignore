@@ -18,3 +18,9 @@ frames/
 *.mp3
 *.mp4
 *.MOV
+
+# Tencent Cloud EdgeOne
+.env
+.edgeone/*
+.tef_dist/*
+  
