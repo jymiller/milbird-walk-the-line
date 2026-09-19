@@ -1,0 +1,19 @@
+{
+ "ok": true,
+ "detections": 53,
+ "video": "IMG_2104.MOV",
+ "duration_s": 404.1,
+ "anchor": {
+  "lat": 37.7912,
+  "lon": -122.4078,
+  "accuracy_m": 7.018998,
+  "note": "single GPS point from clip metadata; per-mark coordinates are derived"
+ },
+ "endpoints": [
+  "/api/locates",
+  "/api/summary",
+  "/api/stage2",
+  "/api/frames/<t>.jpg",
+  "/"
+ ]
+}

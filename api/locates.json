@@ -1,0 +1,1666 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4078,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 13.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0013.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1008,
+    "count": 1,
+    "lat": 37.791218328355264,
+    "lon": -122.40779600108613,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4077789,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 16.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0016.jpg",
+    "colors": [
+     "green"
+    ],
+    "primary": "green",
+    "utility": "sewer, drain",
+    "area": 1156,
+    "count": 1,
+    "lat": 37.79122226555751,
+    "lon": -122.40779514206018,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.407645,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 34.8,
+    "frame": "/Users/johnmiller/Downloads/frames/t0034.jpg",
+    "colors": [
+     "green"
+    ],
+    "primary": "green",
+    "utility": "sewer, drain",
+    "area": 4277,
+    "count": 5,
+    "lat": 37.7912472464269,
+    "lon": -122.40778969168868,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4072651,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 87.0,
+    "frame": "/Users/johnmiller/Downloads/frames/t0087.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 3086,
+    "count": 1,
+    "lat": 37.791318116067245,
+    "lon": -122.40777422922169,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.407209,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 94.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0094.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 2563,
+    "count": 1,
+    "lat": 37.791328570018024,
+    "lon": -122.4077719483597,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4072018,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 95.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0095.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 20920,
+    "count": 4,
+    "lat": 37.79132992767397,
+    "lon": -122.40777165214385,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071945,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 96.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0096.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 13116,
+    "count": 3,
+    "lat": 37.79133128532991,
+    "lon": -122.40777135592802,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071879,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 97.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0097.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 47729,
+    "count": 4,
+    "lat": 37.79133250722027,
+    "lon": -122.40777108933375,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071806,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 98.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0098.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 29075,
+    "count": 7,
+    "lat": 37.79133386487621,
+    "lon": -122.40777079311792,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071384,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 104.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0104.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1152,
+    "count": 2,
+    "lat": 37.79134173928069,
+    "lon": -122.40776907506603,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071312,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 105.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0105.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 3226,
+    "count": 1,
+    "lat": 37.791343096936636,
+    "lon": -122.40776877885018,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4071173,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 107.3,
+    "frame": "/Users/johnmiller/Downloads/frames/t0107.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1763,
+    "count": 2,
+    "lat": 37.79134567648293,
+    "lon": -122.40776821604008,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070962,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 110.2,
+    "frame": "/Users/johnmiller/Downloads/frames/t0110.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 6046,
+    "count": 2,
+    "lat": 37.79134961368518,
+    "lon": -122.40776735701414,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070889,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 111.2,
+    "frame": "/Users/johnmiller/Downloads/frames/t0111.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 2171,
+    "count": 2,
+    "lat": 37.79135097134112,
+    "lon": -122.40776706079829,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070613,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 115.0,
+    "frame": "/Users/johnmiller/Downloads/frames/t0115.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1571,
+    "count": 2,
+    "lat": 37.79135613043371,
+    "lon": -122.40776593517809,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070467,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 117.0,
+    "frame": "/Users/johnmiller/Downloads/frames/t0116.jpg",
+    "colors": [
+     "green",
+     "orange"
+    ],
+    "primary": "green",
+    "utility": "sewer, drain",
+    "area": 15334,
+    "count": 13,
+    "lat": 37.791358845745606,
+    "lon": -122.40776534274642,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070402,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 117.9,
+    "frame": "/Users/johnmiller/Downloads/frames/t0117.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 2257,
+    "count": 2,
+    "lat": 37.79136006763596,
+    "lon": -122.40776507615215,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070256,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 119.9,
+    "frame": "/Users/johnmiller/Downloads/frames/t0119.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1280,
+    "count": 1,
+    "lat": 37.79136278294784,
+    "lon": -122.40776448372047,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070191,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 120.8,
+    "frame": "/Users/johnmiller/Downloads/frames/t0120.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 5779,
+    "count": 9,
+    "lat": 37.791364004838194,
+    "lon": -122.40776421712621,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070118,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 121.8,
+    "frame": "/Users/johnmiller/Downloads/frames/t0121.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 13454,
+    "count": 6,
+    "lat": 37.79136536249414,
+    "lon": -122.40776392091037,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4070045,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 122.8,
+    "frame": "/Users/johnmiller/Downloads/frames/t0122.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 2733,
+    "count": 2,
+    "lat": 37.79136672015009,
+    "lon": -122.40776362469452,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.406998,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 123.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0123.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1598,
+    "count": 2,
+    "lat": 37.79136794204044,
+    "lon": -122.40776335810027,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069907,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 124.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0124.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1807,
+    "count": 1,
+    "lat": 37.791369299696385,
+    "lon": -122.40776306188442,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069834,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 125.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0125.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1302,
+    "count": 2,
+    "lat": 37.791370657352324,
+    "lon": -122.40776276566858,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069769,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 126.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0126.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1779,
+    "count": 2,
+    "lat": 37.791371879242675,
+    "lon": -122.40776249907432,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069623,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 128.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0128.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 5225,
+    "count": 1,
+    "lat": 37.79137459455457,
+    "lon": -122.40776190664263,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069558,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 129.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0129.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1760,
+    "count": 1,
+    "lat": 37.79137581644492,
+    "lon": -122.40776164004838,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069485,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 130.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0130.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1400,
+    "count": 1,
+    "lat": 37.791377174100866,
+    "lon": -122.40776134383253,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069412,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 131.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0131.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 5352,
+    "count": 5,
+    "lat": 37.79137853175681,
+    "lon": -122.40776104761669,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069347,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 132.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0132.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1021,
+    "count": 2,
+    "lat": 37.79137975364716,
+    "lon": -122.40776078102243,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069274,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 133.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0133.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1204,
+    "count": 3,
+    "lat": 37.7913811113031,
+    "lon": -122.40776048480659,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4069135,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 135.3,
+    "frame": "/Users/johnmiller/Downloads/frames/t0135.jpg",
+    "colors": [
+     "orange",
+     "yellow"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 4680,
+    "count": 4,
+    "lat": 37.7913836908494,
+    "lon": -122.40775992199649,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.406843,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 145.0,
+    "frame": "/Users/johnmiller/Downloads/frames/t0145.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 1321,
+    "count": 1,
+    "lat": 37.79139686011207,
+    "lon": -122.40775704870282,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4067724,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 154.7,
+    "frame": "/Users/johnmiller/Downloads/frames/t0154.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 11746,
+    "count": 1,
+    "lat": 37.79141002937474,
+    "lon": -122.40775417540914,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4065125,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 190.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0190.jpg",
+    "colors": [
+     "red"
+    ],
+    "primary": "red",
+    "utility": "electric",
+    "area": 5759,
+    "count": 1,
+    "lat": 37.79145849769199,
+    "lon": -122.40774360050357,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4063226,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 216.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0216.jpg",
+    "colors": [
+     "red"
+    ],
+    "primary": "red",
+    "utility": "electric",
+    "area": 1052,
+    "count": 1,
+    "lat": 37.79149393251216,
+    "lon": -122.40773586927007,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4063153,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 217.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0217.jpg",
+    "colors": [
+     "red"
+    ],
+    "primary": "red",
+    "utility": "electric",
+    "area": 2473,
+    "count": 1,
+    "lat": 37.79149529016811,
+    "lon": -122.40773557305423,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.406308,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 218.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0218.jpg",
+    "colors": [
+     "blue",
+     "pink",
+     "red"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 55321,
+    "count": 3,
+    "lat": 37.791496647824054,
+    "lon": -122.40773527683838,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4063015,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 219.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0219.jpg",
+    "colors": [
+     "red"
+    ],
+    "primary": "red",
+    "utility": "electric",
+    "area": 4746,
+    "count": 1,
+    "lat": 37.791497869714405,
+    "lon": -122.40773501024412,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4060693,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 251.3,
+    "frame": "/Users/johnmiller/Downloads/frames/t0251.jpg",
+    "colors": [
+     "green"
+    ],
+    "primary": "green",
+    "utility": "sewer, drain",
+    "area": 923,
+    "count": 1,
+    "lat": 37.791541178939056,
+    "lon": -122.40772556095875,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4060271,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 257.1,
+    "frame": "/Users/johnmiller/Downloads/frames/t0257.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1136,
+    "count": 1,
+    "lat": 37.79154905334354,
+    "lon": -122.40772384290686,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4057593,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 293.9,
+    "frame": "/Users/johnmiller/Downloads/frames/t0293.jpg",
+    "colors": [
+     "blue"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 4047,
+    "count": 2,
+    "lat": 37.791599015082326,
+    "lon": -122.40771294216385,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4053794,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 346.1,
+    "frame": "/Users/johnmiller/Downloads/frames/t0346.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 2817,
+    "count": 1,
+    "lat": 37.79166988472267,
+    "lon": -122.40769747969686,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4053372,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 351.9,
+    "frame": "/Users/johnmiller/Downloads/frames/t0351.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 3510,
+    "count": 1,
+    "lat": 37.791677759127154,
+    "lon": -122.40769576164497,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4052884,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 358.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0358.jpg",
+    "colors": [
+     "blue"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 37076,
+    "count": 1,
+    "lat": 37.791686855421986,
+    "lon": -122.40769377699884,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4052811,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 359.6,
+    "frame": "/Users/johnmiller/Downloads/frames/t0359.jpg",
+    "colors": [
+     "blue"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 148948,
+    "count": 2,
+    "lat": 37.79168821307793,
+    "lon": -122.407693480783,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4050417,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 392.5,
+    "frame": "/Users/johnmiller/Downloads/frames/t0392.jpg",
+    "colors": [
+     "yellow"
+    ],
+    "primary": "yellow",
+    "utility": "gas, oil, steam",
+    "area": 1122,
+    "count": 1,
+    "lat": 37.79173287995853,
+    "lon": -122.40768373528176,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4050206,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 395.4,
+    "frame": "/Users/johnmiller/Downloads/frames/t0395.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 2261,
+    "count": 1,
+    "lat": 37.791736817160775,
+    "lon": -122.40768287625582,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4050067,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 397.3,
+    "frame": "/Users/johnmiller/Downloads/frames/t0397.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 9227,
+    "count": 1,
+    "lat": 37.79173939670707,
+    "lon": -122.40768231344572,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4049929,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 399.2,
+    "frame": "/Users/johnmiller/Downloads/frames/t0399.jpg",
+    "colors": [
+     "orange",
+     "red"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 7584,
+    "count": 4,
+    "lat": 37.79174197625337,
+    "lon": -122.40768175063562,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4049856,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 400.2,
+    "frame": "/Users/johnmiller/Downloads/frames/t0400.jpg",
+    "colors": [
+     "blue",
+     "orange",
+     "purple"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 3944,
+    "count": 5,
+    "lat": 37.79174333390931,
+    "lon": -122.40768145441979,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4049783,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 401.2,
+    "frame": "/Users/johnmiller/Downloads/frames/t0401.jpg",
+    "colors": [
+     "orange"
+    ],
+    "primary": "orange",
+    "utility": "communications / fibre",
+    "area": 6372,
+    "count": 4,
+    "lat": 37.791744691565256,
+    "lon": -122.40768115820394,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.4049572,
+     37.7912
+    ]
+   },
+   "properties": {
+    "t": 404.1,
+    "frame": "/Users/johnmiller/Downloads/frames/t0404.jpg",
+    "colors": [
+     "blue"
+    ],
+    "primary": "blue",
+    "utility": "potable water",
+    "area": 1261,
+    "count": 2,
+    "lat": 37.7917486287675,
+    "lon": -122.407680299178,
+    "placed": "gps-anchored",
+    "position_provenance": "INTERPOLATED \u2014 single GPS anchor (37.79120,-122.40780, \u00b17.0m) from clip metadata; along-walk position derived from timestamp, NOT measured",
+    "anchor_lat": 37.7912,
+    "anchor_lon": -122.4078,
+    "anchor_accuracy_m": 7.018998,
+    "time_is_measured": true,
+    "street": "Pine St, San Francisco",
+    "axis": "east-west along Pine; offset derived from timestamp at ~0.6 m/s"
+   }
+  }
+ ]
+}
