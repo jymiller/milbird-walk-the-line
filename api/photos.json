@@ -1,0 +1,379 @@
+{
+ "count": 26,
+ "items": [
+  {
+   "id": "IMG_2113",
+   "lat": 37.7912367,
+   "lon": -122.4078617,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red paint on the slab, letters and a bar, hard shadow across it",
+   "at": "2026-09-20 00:45:23 +0000",
+   "img": "photos/IMG_2113.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2114",
+   "lat": 37.7912917,
+   "lon": -122.4078833,
+   "colours": [
+    "green",
+    "red"
+   ],
+   "primary": "green",
+   "note": "green line run along the slab joint, red marks beside it",
+   "at": "2026-09-20 00:45:27 +0000",
+   "img": "photos/IMG_2114.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2115",
+   "lat": 37.7912167,
+   "lon": -122.4078967,
+   "colours": [
+    "red",
+    "green"
+   ],
+   "primary": "red",
+   "note": "red marks and a green edge line at the base of a pole",
+   "at": "2026-09-20 00:45:31 +0000",
+   "img": "photos/IMG_2115.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2116",
+   "lat": 37.791245,
+   "lon": -122.407745,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red marks beside a PG&E vault cover",
+   "at": "2026-09-20 00:46:12 +0000",
+   "img": "photos/IMG_2116.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2118",
+   "lat": 37.791255,
+   "lon": -122.4077617,
+   "colours": [
+    "yellow",
+    "red"
+   ],
+   "primary": "yellow",
+   "note": "yellow GAS written on the slab with a red arrow beside it",
+   "at": "2026-09-20 00:49:55 +0000",
+   "img": "photos/IMG_2118.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2119",
+   "lat": 37.7913283,
+   "lon": -122.4079133,
+   "colours": [
+    "red",
+    "green"
+   ],
+   "primary": "red",
+   "note": "red marks with green dots, kerb and vault",
+   "at": "2026-09-20 00:50:02 +0000",
+   "img": "photos/IMG_2119.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2120",
+   "lat": 37.7913467,
+   "lon": -122.4079583,
+   "colours": [
+    "green",
+    "red",
+    "orange"
+   ],
+   "primary": "green",
+   "note": "green line along the slabs, red lettering, orange fleck",
+   "at": "2026-09-20 00:50:05 +0000",
+   "img": "photos/IMG_2120.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2121",
+   "lat": 37.7913167,
+   "lon": -122.4079967,
+   "colours": [
+    "green"
+   ],
+   "primary": "green",
+   "note": "green edging beside a PG&E GAS VALVE cover",
+   "at": "2026-09-20 00:50:13 +0000",
+   "img": "photos/IMG_2121.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2122",
+   "lat": 37.7913883,
+   "lon": -122.4089667,
+   "colours": [
+    "green"
+   ],
+   "primary": "green",
+   "note": "green marks along the slab by a vault",
+   "at": "2026-09-20 00:51:48 +0000",
+   "img": "photos/IMG_2122.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2123",
+   "lat": 37.79157,
+   "lon": -122.4090717,
+   "colours": [
+    "green"
+   ],
+   "primary": "green",
+   "note": "green marks along the brick edge",
+   "at": "2026-09-20 00:52:09 +0000",
+   "img": "photos/IMG_2123.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2124",
+   "lat": 37.79157,
+   "lon": -122.4090717,
+   "colours": [
+    "green",
+    "red"
+   ],
+   "primary": "green",
+   "note": "green line across the walk at a tree pit, small red mark",
+   "at": "2026-09-20 00:52:13 +0000",
+   "img": "photos/IMG_2124.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2129",
+   "lat": 37.7919967,
+   "lon": -122.4086,
+   "colours": [
+    "green"
+   ],
+   "primary": "green",
+   "note": "green edging along the slabs by a tree",
+   "at": "2026-09-20 00:54:01 +0000",
+   "img": "photos/IMG_2129.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2130",
+   "lat": 37.7919967,
+   "lon": -122.4086,
+   "colours": [
+    "green"
+   ],
+   "primary": "green",
+   "note": "green edging, second frame",
+   "at": "2026-09-20 00:54:03 +0000",
+   "img": "photos/IMG_2130.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2131",
+   "lat": 37.7921917,
+   "lon": -122.407905,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red offset ticks with 12 KV written under them",
+   "at": "2026-09-20 00:54:56 +0000",
+   "img": "photos/IMG_2131.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2132",
+   "lat": 37.7921917,
+   "lon": -122.407905,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red offset ticks, 12 KV and a depth figure",
+   "at": "2026-09-20 00:54:57 +0000",
+   "img": "photos/IMG_2132.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2134",
+   "lat": 37.7921833,
+   "lon": -122.407875,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red tick and a run of figures along the slab",
+   "at": "2026-09-20 00:55:05 +0000",
+   "img": "photos/IMG_2134.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2136",
+   "lat": 37.7921667,
+   "lon": -122.40783,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red offset tick, faded",
+   "at": "2026-09-20 00:55:13 +0000",
+   "img": "photos/IMG_2136.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2137",
+   "lat": 37.7921633,
+   "lon": -122.40783,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red offset tick mid-slab",
+   "at": "2026-09-20 00:55:14 +0000",
+   "img": "photos/IMG_2137.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2138",
+   "lat": 37.7921617,
+   "lon": -122.407805,
+   "colours": [
+    "red",
+    "yellow"
+   ],
+   "primary": "red",
+   "note": "red arcs with yellow GAS lettering beside them",
+   "at": "2026-09-20 00:55:21 +0000",
+   "img": "photos/IMG_2138.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2139",
+   "lat": 37.792155,
+   "lon": -122.407805,
+   "colours": [
+    "red",
+    "yellow"
+   ],
+   "primary": "red",
+   "note": "faded red run with lettering, a yellow mark by the manhole",
+   "at": "2026-09-20 00:55:23 +0000",
+   "img": "photos/IMG_2139.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2140",
+   "lat": 37.7921617,
+   "lon": -122.4078,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "faded red run down the slabs past a tree",
+   "at": "2026-09-20 00:55:26 +0000",
+   "img": "photos/IMG_2140.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2141",
+   "lat": 37.7921633,
+   "lon": -122.4077533,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "faded red marks along the walk",
+   "at": "2026-09-20 00:55:29 +0000",
+   "img": "photos/IMG_2141.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2142",
+   "lat": 37.7921867,
+   "lon": -122.4077083,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "faded red marks and a white box outline",
+   "at": "2026-09-20 00:55:33 +0000",
+   "img": "photos/IMG_2142.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2143",
+   "lat": 37.7921833,
+   "lon": -122.4076617,
+   "colours": [
+    "red"
+   ],
+   "primary": "red",
+   "note": "red marks beside a storm grate",
+   "at": "2026-09-20 00:55:43 +0000",
+   "img": "photos/IMG_2143.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2144",
+   "lat": 37.79185,
+   "lon": -122.40747,
+   "colours": [
+    "white"
+   ],
+   "primary": "white",
+   "note": "white USA stencil \u2014 Underground Service Alert, the 811 request mark",
+   "at": "2026-09-20 00:56:36 +0000",
+   "img": "photos/IMG_2144.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  },
+  {
+   "id": "IMG_2149",
+   "lat": 37.7914417,
+   "lon": -122.40753,
+   "colours": [
+    "white"
+   ],
+   "primary": "white",
+   "note": "white arrow at a building corner",
+   "at": "2026-09-20 00:57:29 +0000",
+   "img": "photos/IMG_2149.jpg",
+   "positionProvenance": "MEASURED \u2014 EXIF GPS written by the camera",
+   "verdictProvenance": "HUMAN \u2014 a person opened this photograph and looked at it"
+  }
+ ],
+ "note": "Confirmed by eye. Positions are EXIF GPS \u2014 measured, not derived."
+}
