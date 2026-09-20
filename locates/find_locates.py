@@ -21,7 +21,7 @@ import numpy as np
 # widened for sun, shadow, wet pavement and faded paint.
 APWA = [
     # name,        utility,                   [(h_lo,s_lo,v_lo),(h_hi,s_hi,v_hi)] ranges
-    ("orange", "communications / fibre", [((5, 120, 120), (18, 255, 255))]),
+    ("orange", "communications / fiber", [((5, 120, 120), (18, 255, 255))]),
     ("red",    "electric",               [((0, 120, 90), (4, 255, 255)), ((170, 120, 90), (179, 255, 255))]),
     ("yellow", "gas, oil, steam",        [((22, 110, 130), (32, 255, 255))]),
     ("green",  "sewer, drain",           [((40, 80, 70), (85, 255, 255))]),

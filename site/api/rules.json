@@ -49,5 +49,5 @@
  },
  "note": "Each rule votes to reject independently, with a measured number. A region can be rejected by several. Nothing here is learned and nothing calls a model \u2014 it is geometry and statistics over pixels.",
  "api_version": "2.0",
- "generated": "2026-09-19T23:19:19+00:00"
+ "generated": "2026-09-20T05:33:58+00:00"
 }

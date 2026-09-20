@@ -14,7 +14,7 @@
    "properties": {
     "t": 14,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1008,
     "rejected_by": [
      "on_pavement"
@@ -318,7 +318,7 @@
    "properties": {
     "t": 95,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 2563,
     "rejected_by": [
      "on_pavement"
@@ -355,7 +355,7 @@
    "properties": {
     "t": 96,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 20920,
     "rejected_by": [
      "stroke_width",
@@ -393,7 +393,7 @@
    "properties": {
     "t": 96,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 2386,
     "rejected_by": [
      "on_pavement"
@@ -430,7 +430,7 @@
    "properties": {
     "t": 96,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1836,
     "rejected_by": [
      "on_pavement"
@@ -467,7 +467,7 @@
    "properties": {
     "t": 96,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1429,
     "rejected_by": [
      "on_pavement"
@@ -504,7 +504,7 @@
    "properties": {
     "t": 97,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 6190,
     "rejected_by": [
      "stroke_width",
@@ -542,7 +542,7 @@
    "properties": {
     "t": 97,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 13116,
     "rejected_by": [
      "stroke_width",
@@ -581,7 +581,7 @@
    "properties": {
     "t": 97,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 946,
     "rejected_by": [
      "stroke_width",
@@ -620,7 +620,7 @@
    "properties": {
     "t": 98,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1493,
     "rejected_by": [
      "on_pavement"
@@ -657,7 +657,7 @@
    "properties": {
     "t": 98,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1368,
     "rejected_by": [
      "on_pavement"
@@ -694,7 +694,7 @@
    "properties": {
     "t": 98,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 47729,
     "rejected_by": [
      "stroke_width",
@@ -732,7 +732,7 @@
    "properties": {
     "t": 98,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 4140,
     "rejected_by": [
      "stroke_width",
@@ -771,7 +771,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1111,
     "rejected_by": [
      "on_pavement"
@@ -808,7 +808,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 13302,
     "rejected_by": [
      "stroke_width",
@@ -846,7 +846,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3318,
     "rejected_by": [
      "stroke_width",
@@ -884,7 +884,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1504,
     "rejected_by": [
      "stroke_width",
@@ -922,7 +922,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 26154,
     "rejected_by": [
      "stroke_width",
@@ -960,7 +960,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 29075,
     "rejected_by": [
      "stroke_width",
@@ -998,7 +998,7 @@
    "properties": {
     "t": 99,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1345,
     "rejected_by": [
      "on_pavement"
@@ -1149,7 +1149,7 @@
    "properties": {
     "t": 107,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1301,
     "rejected_by": [
      "on_pavement"
@@ -1224,7 +1224,7 @@
    "properties": {
     "t": 110,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1068,
     "rejected_by": [
      "on_pavement"
@@ -1300,7 +1300,7 @@
    "properties": {
     "t": 111,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1449,
     "rejected_by": [
      "on_pavement"
@@ -1375,7 +1375,7 @@
    "properties": {
     "t": 115,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1082,
     "rejected_by": [
      "on_pavement"
@@ -1450,7 +1450,7 @@
    "properties": {
     "t": 117,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3198,
     "rejected_by": [
      "stroke_width",
@@ -1950,7 +1950,7 @@
    "properties": {
     "t": 118,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 938,
     "rejected_by": [
      "on_pavement"
@@ -2063,7 +2063,7 @@
    "properties": {
     "t": 121,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 966,
     "rejected_by": [
      "on_pavement"
@@ -2100,7 +2100,7 @@
    "properties": {
     "t": 121,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 5779,
     "rejected_by": [
      "stroke_width",
@@ -2138,7 +2138,7 @@
    "properties": {
     "t": 121,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3610,
     "rejected_by": [
      "stroke_width",
@@ -2176,7 +2176,7 @@
    "properties": {
     "t": 121,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 4653,
     "rejected_by": [
      "stroke_width",
@@ -2406,7 +2406,7 @@
    "properties": {
     "t": 122,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 13454,
     "rejected_by": [
      "stroke_width"
@@ -2443,7 +2443,7 @@
    "properties": {
     "t": 122,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3227,
     "rejected_by": [
      "stroke_width",
@@ -2481,7 +2481,7 @@
    "properties": {
     "t": 122,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1341,
     "rejected_by": [
      "on_pavement"
@@ -2518,7 +2518,7 @@
    "properties": {
     "t": 122,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1363,
     "rejected_by": [
      "on_pavement"
@@ -2555,7 +2555,7 @@
    "properties": {
     "t": 122,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1375,
     "rejected_by": [
      "on_pavement",
@@ -2632,7 +2632,7 @@
    "properties": {
     "t": 123,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 2733,
     "rejected_by": [
      "stroke_width"
@@ -2706,7 +2706,7 @@
    "properties": {
     "t": 124,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1058,
     "rejected_by": [
      "on_pavement"
@@ -2819,7 +2819,7 @@
    "properties": {
     "t": 126,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1302,
     "rejected_by": [
      "on_pavement"
@@ -2894,7 +2894,7 @@
    "properties": {
     "t": 127,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1779,
     "rejected_by": [
      "on_pavement"
@@ -2931,7 +2931,7 @@
    "properties": {
     "t": 127,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1681,
     "rejected_by": [
      "on_pavement"
@@ -2968,7 +2968,7 @@
    "properties": {
     "t": 129,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 5225,
     "rejected_by": [
      "stroke_width"
@@ -3044,7 +3044,7 @@
    "properties": {
     "t": 132,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1014,
     "rejected_by": [
      "on_pavement"
@@ -3081,7 +3081,7 @@
    "properties": {
     "t": 132,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1021,
     "rejected_by": [
      "on_pavement",
@@ -3119,7 +3119,7 @@
    "properties": {
     "t": 133,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1017,
     "rejected_by": [
      "on_pavement"
@@ -3156,7 +3156,7 @@
    "properties": {
     "t": 133,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1204,
     "rejected_by": [
      "on_pavement"
@@ -3193,7 +3193,7 @@
    "properties": {
     "t": 133,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1076,
     "rejected_by": [],
     "verdict": "candidate",
@@ -3228,7 +3228,7 @@
    "properties": {
     "t": 135,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 4680,
     "rejected_by": [
      "stroke_width"
@@ -3265,7 +3265,7 @@
    "properties": {
     "t": 135,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1307,
     "rejected_by": [
      "on_pavement"
@@ -3302,7 +3302,7 @@
    "properties": {
     "t": 135,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3245,
     "rejected_by": [
      "stroke_width",
@@ -3379,7 +3379,7 @@
    "properties": {
     "t": 145,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1321,
     "rejected_by": [
      "on_pavement"
@@ -3416,7 +3416,7 @@
    "properties": {
     "t": 155,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 11746,
     "rejected_by": [
      "stroke_width",
@@ -3834,7 +3834,7 @@
    "properties": {
     "t": 346,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 2817,
     "rejected_by": [
      "stroke_width",
@@ -3873,7 +3873,7 @@
    "properties": {
     "t": 352,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3510,
     "rejected_by": [
      "stroke_width",
@@ -4063,7 +4063,7 @@
    "properties": {
     "t": 395,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 2261,
     "rejected_by": [
      "stroke_width",
@@ -4102,7 +4102,7 @@
    "properties": {
     "t": 397,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 9227,
     "rejected_by": [
      "stroke_width",
@@ -4141,7 +4141,7 @@
    "properties": {
     "t": 399,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1387,
     "rejected_by": [
      "on_pavement"
@@ -4178,7 +4178,7 @@
    "properties": {
     "t": 399,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 7584,
     "rejected_by": [
      "stroke_width",
@@ -4293,7 +4293,7 @@
    "properties": {
     "t": 400,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1400,
     "rejected_by": [
      "on_pavement"
@@ -4330,7 +4330,7 @@
    "properties": {
     "t": 400,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3354,
     "rejected_by": [
      "on_pavement"
@@ -4481,7 +4481,7 @@
    "properties": {
     "t": 401,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 3445,
     "rejected_by": [
      "on_pavement"
@@ -4518,7 +4518,7 @@
    "properties": {
     "t": 401,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 6372,
     "rejected_by": [
      "stroke_width",
@@ -4556,7 +4556,7 @@
    "properties": {
     "t": 401,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1423,
     "rejected_by": [
      "on_pavement"
@@ -4593,7 +4593,7 @@
    "properties": {
     "t": 401,
     "colour": "orange",
-    "utility": "communications / fibre",
+    "utility": "communications / fiber",
     "area": 1489,
     "rejected_by": [
      "on_pavement"
@@ -4698,5 +4698,5 @@
   }
  ],
  "api_version": "2.0",
- "generated": "2026-09-19T23:19:19+00:00"
+ "generated": "2026-09-20T05:33:58+00:00"
 }

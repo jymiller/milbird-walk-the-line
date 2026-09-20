@@ -1,6 +1,6 @@
 {
  "api_version": "2.0",
- "generated": "2026-09-19T23:32:59+00:00",
+ "generated": "2026-09-20T05:34:00+00:00",
  "source": {
   "file": "IMG_2104.MOV",
   "sha256": "6ef6297733a3b39056e248cf08dbf6c93962a683f40e1e5274086593a0a3debf",
@@ -65,7 +65,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1008,
     "rulesFired": [
      "on_pavement"
@@ -219,7 +219,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 2563,
     "rulesFired": [
      "on_pavement"
@@ -256,7 +256,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 20920,
     "rulesFired": [
      "stroke_width",
@@ -294,7 +294,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 13116,
     "rulesFired": [
      "stroke_width",
@@ -333,7 +333,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 47729,
     "rulesFired": [
      "stroke_width",
@@ -371,7 +371,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 29075,
     "rulesFired": [
      "stroke_width",
@@ -753,7 +753,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 5779,
     "rulesFired": [
      "stroke_width",
@@ -791,7 +791,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 13454,
     "rulesFired": [
      "stroke_width"
@@ -828,7 +828,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 2733,
     "rulesFired": [
      "stroke_width"
@@ -941,7 +941,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1302,
     "rulesFired": [
      "on_pavement"
@@ -978,7 +978,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1779,
     "rulesFired": [
      "on_pavement"
@@ -1015,7 +1015,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 5225,
     "rulesFired": [
      "stroke_width"
@@ -1091,7 +1091,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1021,
     "rulesFired": [
      "on_pavement",
@@ -1129,7 +1129,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1204,
     "rulesFired": [
      "on_pavement"
@@ -1166,7 +1166,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 4680,
     "rulesFired": [
      "stroke_width"
@@ -1203,7 +1203,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 1321,
     "rulesFired": [
      "on_pavement"
@@ -1240,7 +1240,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 11746,
     "rulesFired": [
      "stroke_width",
@@ -1507,7 +1507,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 2817,
     "rulesFired": [
      "stroke_width",
@@ -1546,7 +1546,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 3510,
     "rulesFired": [
      "stroke_width",
@@ -1699,7 +1699,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 2261,
     "rulesFired": [
      "stroke_width",
@@ -1738,7 +1738,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 9227,
     "rulesFired": [
      "stroke_width",
@@ -1777,7 +1777,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 7584,
     "rulesFired": [
      "stroke_width",
@@ -1851,7 +1851,7 @@
    "extraction": {
     "method": "deterministic \u2014 HSV colour match against the APWA Uniform Color Code, then seven geometric and statistical classifiers",
     "colour": "orange",
-    "utilityClass": "communications / fibre",
+    "utilityClass": "communications / fiber",
     "areaPx": 6372,
     "rulesFired": [
      "stroke_width",

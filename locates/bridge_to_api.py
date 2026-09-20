@@ -20,7 +20,7 @@ STAGE_UTILITY_LOCATES = 2
 
 # APWA colour → what a locate of that colour actually asserts is under the ground.
 UTILITY = {
-    "orange": "communications / fibre", "red": "electric", "yellow": "gas, oil, steam",
+    "orange": "communications / fiber", "red": "electric", "yellow": "gas, oil, steam",
     "green": "sewer, drain", "blue": "potable water", "pink": "temporary survey",
     "purple": "reclaimed water",
 }

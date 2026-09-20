@@ -19,7 +19,7 @@ from urllib.parse import urlparse, parse_qs
 STATE = {}
 
 UTILITY = {
-    "orange": "communications / fibre", "red": "electric", "yellow": "gas, oil, steam",
+    "orange": "communications / fiber", "red": "electric", "yellow": "gas, oil, steam",
     "green": "sewer, drain", "blue": "potable water", "pink": "temporary survey",
     "purple": "reclaimed water",
 }

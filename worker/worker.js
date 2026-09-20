@@ -15,6 +15,9 @@
  * rather than asserted to be.
  */
 import { DATA } from "./data.js";
+import { REGIONS } from "./mapdata.js";
+import { appView } from "./appview.js";
+import { WALK_JS, GEO } from "./geo.js";
 
 const CORS = {
   "access-control-allow-origin": "*",
@@ -267,7 +270,7 @@ without a reason is refused. Refusals are kept beside confirmations.</p>
 <tr><td><a href="/v1/summary">/v1/summary</a></td><td>the funnel and provenance</td></tr>
 <tr><td><a href="/v1/rules">/v1/rules</a></td><td>the rule bank and thresholds</td></tr>
 <tr><td><a href="/v1/decisions">/v1/decisions</a></td><td>the decision log and its chain</td></tr>
-<tr><td><a href="/v1">/v1</a></td><td>this index, as JSON</td></tr></table>
+<tr><td><a href="/locates">/locates</a></td><td>the Utility Locates screen, in the app's own look</td></tr><tr><td><a href="/map">/map</a></td><td>all 124 readings on the map, against the building</td></tr><tr><td><a href="/v1">/v1</a></td><td>this index, as JSON</td></tr></table>
 <p class="note">CORS open, no key. Write-up:
 <a href="https://claude.ai/artifact/7zpNEbGd88rbQGuLsEFFBJ">the deck</a> &middot;
 <a href="https://github.com/jymiller/milbird-walk-the-line">the pipeline</a>.</p>
@@ -310,12 +313,176 @@ load().catch(function(){document.getElementById('log').innerHTML='<p class="note
 </script></body></html>`;
 }
 
+/**
+ * Every reading, placed against the building it was walked past.
+ *
+ * There are no confirmed locate marks to plot, so this plots the honest thing
+ * instead: all 124 readings, where each was taken, and what the rule bank
+ * decided about it. Positions are DERIVED — interpolated along the street axis
+ * from one GPS anchor at +-7m — and the map says so rather than implying survey
+ * accuracy it does not have.
+ */
+function mapPage() {
+  const pts = REGIONS.map(r => ({ ...r }));
+  return `<!doctype html><html lang=en><head><meta charset=utf8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Walk the Line — the walk, on a map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{--paper:#15130F;--surface:#1D1A16;--ink:#F2EDE6;--ink2:#C6BDB2;--muted:#8D8378;
+--line:#312B24;--comms:#F08A48;--elec:#F06B7F;--gas:#DBB454;--sewer:#6FBF8E;--water:#78AEDD;
+--disp:'Bricolage Grotesque',Helvetica,sans-serif;--body:'IBM Plex Sans',Helvetica,sans-serif;
+--mono:'IBM Plex Mono',Menlo,monospace}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--paper);color:var(--ink);font-family:var(--body)}
+#map{position:absolute;inset:0 0 0 0}
+.panel{position:absolute;top:0;left:0;z-index:1000;max-width:410px;
+background:rgba(21,19,15,.93);backdrop-filter:blur(10px);border-right:1px solid var(--line);
+border-bottom:1px solid var(--line);padding:22px 24px 20px;max-height:100%;overflow-y:auto}
+h1{font-family:var(--disp);font-weight:800;font-size:27px;line-height:1.05;letter-spacing:-.03em;margin:0 0 6px}
+.sub{font-size:14.5px;color:var(--ink2);line-height:1.45;margin:0 0 16px}
+.key{display:grid;gap:7px;margin:0 0 16px}
+.kr{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink2)}
+.kd{width:13px;height:13px;border-radius:50%;flex:0 0 auto}
+.kr b{color:var(--ink);font-family:var(--mono);font-size:13px}
+.note{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--muted);
+border-top:1px solid var(--line);padding-top:13px;margin:0}
+.note b{color:var(--gas)}
+.simbtn{display:block;width:100%;font-family:var(--body);font-size:14.5px;font-weight:600;
+padding:11px 16px;border-radius:9px;border:1px solid var(--muted);background:transparent;
+color:var(--ink);cursor:pointer;margin:0 0 14px}
+.simbtn:hover{border-color:var(--gas);color:var(--gas)}
+.simbtn.on{background:var(--gas);border-color:var(--gas);color:#15130F}
+.simban{display:none;position:absolute;top:0;left:0;right:0;z-index:1200;
+background:#DBB454;color:#15130F;font-family:var(--mono);font-size:12.5px;font-weight:600;
+letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:9px 14px}
+.leaflet-popup-content-wrapper{background:var(--surface);color:var(--ink);border-radius:10px}
+.leaflet-popup-tip{background:var(--surface)}
+.leaflet-popup-content{margin:13px 15px;font-family:var(--body);font-size:13.5px;line-height:1.5}
+.pt{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:5px}
+.pv{font-weight:600;font-size:15px;margin-bottom:6px}
+.pr{font-family:var(--mono);font-size:11.5px;color:var(--elec);line-height:1.6}
+.pimg{width:100%;border-radius:7px;margin-top:9px;display:block}
+a{color:var(--comms)}
+@media(max-width:700px){.panel{max-width:100%;position:relative;border-right:0}#map{top:auto;height:62vh;position:relative}}
+</style></head><body>
+<div id="map"></div>
+<div id="simban" class="simban">SIMULATED LAYER ON &mdash; these points are illustrative, not detections from the video</div>
+<div class="panel">
+  <h1>The walk, on a map</h1>
+  <p class="sub">405 seconds along Pine Street. Every colour reading the detector produced, where it
+  was taken, and what the rule bank decided.</p>
+  <div class="key">
+    <div class="kr"><span class="kd" style="background:#6FBF8E"></span><b>0</b> confirmed locate marks</div>
+    <div class="kr"><span class="kd" style="background:#DBB454"></span><b>2</b> reached a human</div>
+    <div class="kr"><span class="kd" style="background:#8D8378"></span><b>122</b> rejected by rule</div>
+    <div class="kr"><span class="kd" style="background:#F08A48;border-radius:2px"></span>724 Pine St &mdash; the building</div>
+    <div class="kr"><span class="kd" style="border:2px solid #DBB454;background:transparent"></span>the camera's own GPS point, 100 m off</div>
+  </div>
+  <button id="simbtn" class="simbtn">Show a simulated marked block</button>
+  <p class="note">The path is a <b>RECONSTRUCTION</b>, not recorded GPS. iOS writes one location per
+  clip, never a track, so the filmer's route was never in the file. What is measured: the block geometry
+  and the address from OpenStreetMap, and 405 seconds of duration. The pavement loop is <b>311 m</b>,
+  which is 0.77 m/s &mdash; one clockwise lap at filming pace. Click any point for its frame.
+  <a href="/">Back to the API</a></p>
+</div>
+<script>
+const R = ${JSON.stringify(pts)};
+${WALK_JS}
+// A SIMULATED marked block. Not detections. This is what the same map looks like
+// when the street has actually been located, so the product can be shown working
+// while the real run stands at zero. Every one of these is flagged in its popup.
+const SIM = [
+  {o:0.06,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.11,c:'orange',u:'communications / fiber',k:'arrow'},
+  {o:0.17,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.21,c:'yellow',u:'gas, oil, steam',k:'crossing'},
+  {o:0.26,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.32,c:'blue',u:'potable water',k:'crossing'},
+  {o:0.38,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.44,c:'red',u:'electric',k:'crossing'},
+  {o:0.49,c:'orange',u:'communications / fiber',k:'arrow'},
+  {o:0.55,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.61,c:'yellow',u:'gas, oil, steam',k:'crossing'},
+  {o:0.66,c:'green',u:'sewer, drain',k:'crossing'},
+  {o:0.72,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.78,c:'orange',u:'communications / fiber',k:'line'},
+  {o:0.84,c:'blue',u:'potable water',k:'crossing'},
+  {o:0.89,c:'orange',u:'communications / fiber',k:'arrow'},
+  {o:0.94,c:'orange',u:'communications / fiber',k:'line'}
+];
+const B = G.door, ANCHOR = G.anchor, DUR = G.durationS;
+const DEG_LON_PER_M = 1/(111320*Math.cos(B[0]*Math.PI/180));
+const COL = {orange:'#F08A48',red:'#F06B7F',yellow:'#DBB454',green:'#6FBF8E',blue:'#78AEDD'};
+const map = L.map('map',{zoomControl:false}).setView(B, 20);
+L.control.zoom({position:'bottomright'}).addTo(map);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {maxZoom:22,maxNativeZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+L.marker(atTime(0)).addTo(map).bindPopup('<div class="pv">724 Pine Street</div>'+
+  '<div class="pt">37.7915965, -122.4088201</div>');
+L.circleMarker(B,{radius:10,color:'#F08A48',fillColor:'#F08A48',fillOpacity:.9,weight:3}).addTo(map);
+// the clip's own GPS point, and how far off it is
+L.circleMarker(ANCHOR,{radius:7,color:'#DBB454',fillColor:'transparent',weight:2,dashArray:'3 3'})
+  .addTo(map).bindPopup('<div class="pt" style="color:#DBB454">GPS anchor written by the camera</div>'+
+  '<div class="pv">37.7912, -122.4078</div>'+
+  '<div class="pt">100 m from the door &mdash; 90 m east, 44 m south.<br>One ISO6709 point per clip, '+
+  'claimed accuracy &plusmn;7 m. This is why positions are labelled derived.</div>',{maxWidth:300});
+L.circleMarker(ANCHOR,{radius:2.5,color:'#DBB454',fillColor:'#DBB454',fillOpacity:1,weight:1}).addTo(map);
+const path = walkPolyline(2);
+R.forEach(function(r){
+  const pos = atTime(r.t), lat = pos[0], lon = pos[1];
+  const done = r.v==='candidate';
+  const m = L.circleMarker([lat,lon],{radius: done?8:5,
+    color: done?'#DBB454':'#8D8378', fillColor: done?'#DBB454':(COL[r.c]||'#8D8378'),
+    fillOpacity: done?.95:.5, weight: done?2:1}).addTo(map);
+  const frame = 'https://jymiller.github.io/milbird-walk-the-line/frames/t'+String(r.t).padStart(4,'0')+'.jpg';
+  m.bindPopup('<div class="pt">t='+r.t+'s &middot; '+r.c+' &middot; '+r.a+'px</div>'+
+    '<div class="pv">'+(done?'Reached a human. Not confirmed.':'Rejected by rule')+'</div>'+
+    (r.rb.length?'<div class="pr">'+r.rb.join('<br>')+'</div>':'')+
+    '<img class="pimg" src="'+frame+'" onerror="this.style.display=\'none\'">',{maxWidth:330});
+});
+L.polyline(path,{color:'#8D8378',weight:2,opacity:.55,dashArray:'5 6'}).addTo(map);
+map.fitBounds(L.latLngBounds(path.concat([B, ANCHOR])).pad(.06));
+
+// ---- the simulated layer ----
+const simLayer = L.layerGroup();
+SIM.forEach(function(s,i){
+  const pos = atTime(s.o*G.durationS), lat = pos[0], lon = pos[1];
+  const col = COL[s.c];
+  const m = L.circleMarker([lat,lon],{radius:9,color:'#fff',weight:2,
+    fillColor:col,fillOpacity:.95,dashArray:'3 3'}).addTo(simLayer);
+  m.bindPopup('<div class="pt" style="color:#DBB454">SIMULATED &mdash; not a detection</div>'+
+    '<div class="pv" style="color:'+col+'">'+s.c+' &middot; '+s.u+'</div>'+
+    '<div class="pt">'+s.k+' marking &middot; illustrative position only</div>',{maxWidth:300});
+});
+let simOn=false;
+const btn=document.getElementById('simbtn'), ban=document.getElementById('simban');
+btn.addEventListener('click',function(){
+  simOn=!simOn;
+  if(simOn){simLayer.addTo(map);ban.style.display='block';btn.textContent='Hide the simulated block';
+    btn.classList.add('on');}
+  else{map.removeLayer(simLayer);ban.style.display='none';btn.textContent='Show a simulated marked block';
+    btn.classList.remove('on');}
+});
+</script></body></html>`;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const p = url.pathname.replace(/\/+$/, "") || "/";
 
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS });
+
+    if (p === "/locates") return new Response(appView(DATA, REGIONS, WALK_JS), {
+      headers: { "content-type": "text/html; charset=utf-8", ...CORS },
+    });
+
+    if (p === "/map") return new Response(mapPage(), {
+      headers: { "content-type": "text/html; charset=utf-8", ...CORS },
+    });
 
     if (p === "/") return new Response(page(), {
       headers: { "content-type": "text/html; charset=utf-8", ...CORS },

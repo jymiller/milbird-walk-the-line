@@ -28,7 +28,7 @@ import numpy as np
 # Identical ranges to find_locates.py — stage two must see exactly what stage
 # one saw, or the rejections are about a different picture.
 APWA = [
-    ("orange", "communications / fibre", [((5, 120, 120), (18, 255, 255))]),
+    ("orange", "communications / fiber", [((5, 120, 120), (18, 255, 255))]),
     ("red",    "electric",               [((0, 120, 90), (4, 255, 255)), ((170, 120, 90), (179, 255, 255))]),
     ("yellow", "gas, oil, steam",        [((22, 110, 130), (32, 255, 255))]),
     ("green",  "sewer, drain",           [((40, 80, 70), (85, 255, 255))]),
