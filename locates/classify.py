@@ -51,8 +51,26 @@ PAVEMENT_SAT_MAX = 70      # concrete and asphalt are grey: low saturation
 HUE_STD_MAX      = 7.0     # one pigment is narrow. Leaf litter is a gradient.
 SAT_MEAN_MIN     = 110     # locate paint is fluorescent. Dead leaves are not.
 GROUND_BAND      = 0.62    # centroid must sit below this fraction of frame height
-EXG_MAX          = 0.06    # excess-green index. Living foliage is green in a way
-                           # pigment is not: it reflects hard in G against R and B.
+EXG_MAX          = 0.06    # excess-green index. Sound for colours pigment does not
+                           # occupy; useless for green and yellow — see VEG_CANNOT_JUDGE.
+
+# Where excess-green cannot tell paint from a plant.
+#
+# ExG = (2G - R - B) / (R+G+B). On pure APWA pigment it reads +1.045 for green
+# and +0.455 for yellow; a dry leaf reads +0.065 and a live one +0.636. The
+# marks score MORE vegetation-like than the vegetation, so as a veto the rule
+# rejected 19/19 green and 24/24 yellow regions — every gas and sewer locate it
+# will ever see, on arithmetic rather than evidence.
+#
+# Texture, hue spread and brightness spread were all measured against the nine
+# regions confirmed by eye to be leaves. None separates them: texture medians
+# 2.25 for the known leaves against 3.21 for the rest, hue spread 1.86 against
+# 1.82. There is no discriminator in this data because there is no confirmed
+# paint in it to discriminate against.
+#
+# So for these two classes the rule no longer decides. It escalates. A rule that
+# cannot tell two things apart must not quietly pick one.
+VEG_CANNOT_JUDGE = ("green", "yellow")
 VALUE_CV_MAX     = 0.28    # paint is a flat film on a flat surface, so brightness
                            # across it barely varies. A curled leaf is a 3-D object
                            # with a lit face and a shadowed one.
@@ -161,8 +179,12 @@ def measure(frame, colour, area, contour, y0, hsv):
     }
 
 
-def vote(m):
-    """Each rule rejects independently. Returns the list of rules that fired."""
+def vote(m, colour=None):
+    """Each rule votes independently.
+
+    Returns (rejected_by, flagged_by). A rule that fires on a class it cannot
+    judge flags for human review instead of rejecting.
+    """
     fired = []
     if m["stroke_frac"] > STROKE_MAX_FRAC:
         fired.append("stroke_width")
@@ -178,7 +200,12 @@ def vote(m):
         fired.append("not_vegetation")
     if m["value_cv"] > VALUE_CV_MAX:
         fired.append("flat_film")
-    return fired
+
+    flagged = []
+    if "not_vegetation" in fired and colour in VEG_CANNOT_JUDGE:
+        fired.remove("not_vegetation")
+        flagged.append("not_vegetation")
+    return fired, flagged
 
 
 def main():
@@ -208,24 +235,27 @@ def main():
             continue
         for colour, utility, area, cnt, y0, hsv in regions(frame):
             m = measure(frame, colour, area, cnt, y0, hsv)
-            fired = vote(m)
+            fired, flagged = vote(m, colour)
+            verdict = "rejected" if fired else ("review" if flagged else "candidate")
             rows.append({"t": t, "colour": colour, "utility": utility,
                          "area": int(area), "rejected_by": fired,
-                         "verdict": "candidate" if not fired else "rejected", **m})
+                         "flagged_by": flagged, "verdict": verdict, **m})
         n += 1
     cap.release()
 
     kept = [r for r in rows if r["verdict"] == "candidate"]
+    review = [r for r in rows if r["verdict"] == "review"]
     rej = [r for r in rows if r["verdict"] == "rejected"]
     tally = Counter(x for r in rej for x in r["rejected_by"])
 
     print(f"colour pass      {len(rows):>4} regions across {len(want)} frames")
-    print(f"after classifiers{len(kept):>4} candidates, {len(rej)} rejected\n")
+    print(f"after classifiers{len(kept):>4} candidates, {len(review)} to review, {len(rej)} rejected\n")
     print("rejections by rule (a region can fire several):")
     for r in RULES:
         print(f"   {r:<20} {tally.get(r,0):>4}   {WHY[r]}")
 
     json.dump({"rules": RULES, "why": WHY,
+               "cannot_judge": {"not_vegetation": list(VEG_CANNOT_JUDGE)},
                "thresholds": {"stroke_max_frac": STROKE_MAX_FRAC, "slab_area_frac": SLAB_AREA_FRAC,
                               "slab_extent": SLAB_EXTENT, "pavement_min": PAVEMENT_MIN,
                               "hue_std_max": HUE_STD_MAX, "sat_mean_min": SAT_MEAN_MIN,

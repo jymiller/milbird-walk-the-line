@@ -542,6 +542,40 @@ export default {
         : json({ error: "no such region", hint: "use regionId or id from /v1/evidence" }, 404);
     }
 
+
+    // --- vision: ask a model whether this image shows locate paint -----------
+    // The hand-written colour detector scores 0/25 against ground truth. This
+    // route puts an open-weights vision model on the same images so the two can
+    // be compared on the same evidence rather than argued about.
+    if (p === "/v1/vision" && request.method === "POST") {
+      if (!env.AI) return json({ error: "AI binding not configured" }, 503);
+      const model = url.searchParams.get("model") || "@cf/meta/llama-3.2-11b-vision-instruct";
+      const bytes = [...new Uint8Array(await request.arrayBuffer())];
+      if (!bytes.length) return json({ error: "post the image bytes as the body" }, 400);
+      const prompt =
+        "This is a photograph of a pavement or sidewalk. Utility locate marks are spray paint " +
+        "applied to the ground before digging, following the APWA colour code: orange is " +
+        "communications or fiber, red is electric, yellow is gas, green is sewer, blue is water, " +
+        "pink is survey. They look like arrows, dashes, lines, ticks or short hand-lettering, with " +
+        "soft aerosol edges, and they are OFTEN FADED, dusty or worn. Painted kerbs, brick, leaves, " +
+        "road markings, manhole covers and vehicles are NOT locate marks.\n\n" +
+        "Answer in this exact form and nothing else:\n" +
+        "PAINT: yes or no\nCOLOURS: comma separated, or none\nWHAT: one short phrase";
+      try {
+        const r = await env.AI.run(model, { image: bytes, prompt, max_tokens: 96 });
+        const text = (r && (r.description || r.response || r.text) || "").trim();
+        const paint = /PAINT:\s*yes/i.test(text);
+        const cm = text.match(/COLOURS:\s*([^\n]*)/i);
+        return json({
+          model, paint,
+          colours: cm ? cm[1].split(",").map(x => x.trim().toLowerCase()).filter(x => x && x !== "none") : [],
+          raw: text,
+        });
+      } catch (e) {
+        return json({ error: String(e && e.message || e), model }, 502);
+      }
+    }
+
     if (p === "/v1/decisions") {
       if (request.method === "POST") {
         let body;
