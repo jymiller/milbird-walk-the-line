@@ -1,0 +1,56 @@
+{
+  "source": "https://walk-the-line.replit.app/assets/index-D5kLCatC.js",
+  "read_on": "2026-09-20",
+  "note": "Read out of the served bundle. Nothing here came from probing: every /api path returns 401 (including /api/banana) and every non-/api path returns 200 (including /nonsense-xyz123).",
+  "routes": [
+    "/",
+    "/join/:token",
+    "/overview",
+    "/people",
+    "/projects/:id",
+    "/projects/:id/capture",
+    "/projects/:id/evidence",
+    "/sign-in/*?",
+    "/sign-up/*?"
+  ],
+  "assignment_api": {
+    "create": "POST /api/workers/{workerId}/assignments",
+    "update": "PATCH /api/worker-assignments/{id}",
+    "deactivate": "DELETE /api/worker-assignments/{id}",
+    "fields": [
+      "projectId",
+      "crewId",
+      "siteId",
+      "allowedSiteIds",
+      "allowedWorkTypeIds"
+    ]
+  },
+  "people_page_ui": {
+    "sections": [
+      "Members & Invites",
+      "Pending Invitations",
+      "Worker Assignments",
+      "Active & Past Assignments"
+    ],
+    "buttons": [
+      "Create Invitation",
+      "New assignment",
+      "Grant access"
+    ],
+    "dialog_title": "Grant access / Edit assignment",
+    "dialog_subtitle": "Scope this worker to an operational context.",
+    "empty_state": "No assignments yet. Use New assignment to grant access.",
+    "validation": "Choose at least a crew or a site before granting access.",
+    "toasts": [
+      "Invitation created for {email}.",
+      "Invitation revoked.",
+      "Access granted.",
+      "Assignment updated.",
+      "Assignment deactivated. The worker will lose access on their next sync."
+    ],
+    "invite_role": "worker",
+    "join_link": "{origin}/join/{token}"
+  },
+  "capture_requirements": "Missing required fields (site, crew, at least one item, and photo).",
+  "why_it_matters": "An invitation alone grants no work. The Assignments list in the native app is populated by granting an assignment, which is a separate action. This is the most likely reason that list was empty."
+}

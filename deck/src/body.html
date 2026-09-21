@@ -951,34 +951,101 @@
   still untested.</figcaption></figure>
 
   <h3 class="dh">Run it yourself</h3>
-  <ol class="runthrough">
-    <li>Sign in to the control room on a laptop and open <code>/people</code>.</li>
-    <li><b>Create Invitation</b> against an address you can stand at. It mints a join link.</li>
-    <li>On the phone, open <b>TestFlight</b> and install <b>Walk the Line</b>. The build in the
-      picture is <code>1.0.0&nbsp;(8)</code>, with ninety days left on it.</li>
-    <li>Open the app. It comes up on <b>Assignments</b>, and there are three tabs &mdash;
-      Assignments, History, Account.</li>
-    <li>Back on the laptop, look for what the field sent, with a position on it.</li>
+  <p class="lede">Two devices, side by side &mdash; a laptop signed in to the control room and the
+  phone with the app on it. Most of this test is <b>watching one screen change because of something
+  you did on the other</b>. Every step says what you should see, so you know where it stopped.</p>
+
+  <ol class="script">
+    <li><span class="do">On the laptop, open <code>/people</code>.</span>
+      <span class="see"><i>you should see</i><b>Members &amp; Invites</b> at the top, and
+      <b>Worker Assignments</b> below it. Those are two different things, and you need both.</span></li>
+
+    <li><span class="do">Under Members &amp; Invites, <b>Create Invitation</b> for an email you can
+      open. The role it mints is <code>worker</code>.</span>
+      <span class="see"><i>you should see</i><b>&ldquo;Invitation created for &hellip;&rdquo;</b>
+      and a link ending <code>/join/&hellip;</code></span></li>
+
+    <li><span class="do">Open that link and accept it. This is the step that makes the account
+      exist.</span>
+      <span class="see"><i>you should see</i>the join page &mdash;
+      <b>&ldquo;Join your field operations team&rdquo;</b></span></li>
+
+    <li><span class="do">On the phone: <b>TestFlight &rarr; Walk the Line &rarr; Open</b>, and sign
+      in as that same person.</span>
+      <span class="see"><i>you should see</i><b>Hello, Worker</b>, and an Assignments tab reading
+      <b>No assignments</b>. That is correct so far &mdash; it is meant to be empty.</span>
+      <span class="aside">The Account tab shows only Sign out, never an email, so if you are not
+      certain who the app is signed in as, sign out and back in deliberately.</span></li>
+
+    <li class="crux"><span class="do">Back on the laptop: <b>Worker Assignments &rarr; New
+      assignment</b>. Choose the worker, choose a project, and choose <b>at least a crew or a
+      site</b>.</span>
+      <span class="see"><i>you should see</i><b>&ldquo;Access granted.&rdquo;</b> &mdash; and if you
+      skipped the crew and the site, <b>&ldquo;Choose at least a crew or a site before granting
+      access.&rdquo;</b> instead.</span>
+      <span class="aside"><b>An invitation on its own puts nothing in the app.</b> Inviting somebody
+      lets them in; granting an assignment is what gives them work. This is the step that does it,
+      and it is the one easiest to miss.</span></li>
+
+    <li class="crux"><span class="do">On the phone, open <b>Assignments</b> and press the refresh
+      button, top right.</span>
+      <span class="see"><i>you should see</i>the assignment you just granted, where
+      <b>No assignments</b> used to be.</span>
+      <span class="aside"><b>This is the whole test.</b> If it lands, the office and the field are
+      one system. If it does not, stop here &mdash; you have found the seam, and that is worth more
+      than finishing the demo.</span></li>
+
+    <li><span class="do">Open the assignment and capture. Allow the camera and allow location. It
+      wants <b>a site, a crew, at least one item, and a photograph</b> before it will send.</span>
+      <span class="see"><i>you should see</i>it accept the submission &mdash; or tell you exactly
+      which of those four is missing.</span></li>
+
+    <li><span class="do">Back on the laptop, open that project&rsquo;s evidence.</span>
+      <span class="see"><i>you should see</i>what the phone just sent, <b>with a position on
+      it</b>. That is the loop closed.</span></li>
   </ol>
 
-  <div class="cal hon"><p class="lab">Two things that will bite you outdoors</p>
-  <p><b>iOS asks for location once.</b> Decline it and you will not be asked again &mdash; capture
-  carries on silently with no position, which looks like it worked. Settings is the only way back.</p>
-  <p><b>A phone fix is not an EXIF tag.</b> A fix taken at the moment of capture is not the
-  coordinate a camera writes into a file. Usually close. Not the same thing, and on a hill between
-  tall buildings the gap is the point.</p></div>
+  <div class="cal stop"><p class="lab">If step 6 stays empty</p>
+  <p>Work backwards, and the answer is almost always step&nbsp;5. In order: is there a row under
+  <b>Active &amp; Past Assignments</b> at all? Is it <b>active</b> rather than greyed out? Is it
+  against the project you are looking at? And is the app signed in as the person you granted it
+  to &mdash; not a different account left over from an earlier attempt?</p>
+  <p>The control room says, when you deactivate an assignment, that <b>&ldquo;the worker will lose
+  access on their next sync&rdquo;</b>. So the app is expected to come back and ask. If a granted,
+  active assignment still never lands after a refresh, that is a real defect and worth sending
+  straight to Rene.</p></div>
+
+  <p class="down brk" role="button" tabindex="0" aria-label="More below"><svg viewBox="0 0 26 15" aria-hidden="true"><path d="M3,3 L13,12 L23,3"/></svg></p>
+
+  <h3 class="dh">Other things to consider</h3>
+  <p class="lede">None of this is needed to run the test above. It is what is worth knowing before
+  anybody leans on the result.</p>
+
+  <div class="cal hon"><p class="lab">Three things about location, none confirmed in the app</p>
+  <p><b>All three are read off the control room&rsquo;s capture screen.</b> The web capture
+  screen asks the browser for a position at the moment of capture, and carries the string
+  <code>Location Access Denied</code>. What the native app does about location has not been
+  watched.</p>
+  <p><b>A fix at capture is not an EXIF tag.</b> A position taken when the shutter fires is not the
+  coordinate a camera writes into the file. Usually close. Not the same thing &mdash; and on a hill
+  between tall buildings the gap between them is the whole subject of this deck.</p>
+  <p><b>Permission is asked once.</b> Decline it and the ask does not come back on its own; capture
+  can carry on with no position and look like it worked. Whether that is true of the app as well as
+  the browser is one of the things the run-through will tell you.</p></div>
 
   <div class="cal hard"><p class="lab">What is proven, and what is not</p>
-  <p><b>Proven:</b> the app exists and runs. <code>1.0.0&nbsp;(8)</code> is in TestFlight with ninety
-  days to go, it signs a worker in, and it has Assignments, History and Account. The control room
-  exists too, and its routes were read out of its own bundle.</p>
-  <p><b>Not proven:</b> that an invitation raised in the control room arrives in that Assignments
-  list. It was empty when the picture was taken. The two halves have not been watched talking to
-  each other, and until somebody does that, <b>this is two working halves, not one working
-  loop.</b></p>
-  <p class="fine">The control room and the app were built in separate places &mdash; the app by Rene,
-  in a Replit workspace not in this repository &mdash; so nothing here is claimed from its source.
-  Everything above about the app is read off photographs of a real phone.</p></div>
+  <p><b>Proven.</b> The app is real and running: <code>1.0.0&nbsp;(8)</code> in TestFlight with
+  ninety days to go, signing a worker in, with Assignments, History and Account. The control room is
+  real too, and it carries a full assignment API &mdash; create, edit, deactivate &mdash; read out
+  of its own bundle.</p>
+  <p><b>Not proven.</b> That the two are wired to each other. Nobody has yet watched an assignment
+  granted in the control room arrive in that Assignments list. Until somebody does,
+  <b>this is two working halves, not one working loop</b> &mdash; which is exactly what the
+  run-through settles, in about eight steps.</p>
+  <p class="fine">The control room and the app were built in separate places &mdash; the app by
+  Rene, in a Replit workspace that is not in this repository &mdash; so nothing here is claimed from
+  the app&rsquo;s source. What the app does is read off photographs of a real phone; what the
+  control room does is read out of the JavaScript it serves.</p></div>
 </div>
 </div></section>
 

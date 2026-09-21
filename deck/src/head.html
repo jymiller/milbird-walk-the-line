@@ -858,6 +858,38 @@ body.anim .slide.live .down svg{animation:bob 2.4s ease-in-out 2.2s infinite}
 
 .cal .fine{font-size:13.5px;color:var(--muted);margin-top:10px;padding-top:9px;border-top:1px solid var(--line)}
 
+/* ---- the test script: do this, see that ---- */
+.lede{font-size:16.5px;line-height:1.6;color:var(--ink-2);max-width:74ch;
+  margin:clamp(6px,1vh,12px) 0 clamp(14px,2.2vh,26px)}
+.lede b{color:var(--ink);font-weight:600}
+.script{counter-reset:sc;margin:0;padding:0;max-width:80ch}
+.script li{counter-increment:sc;list-style:none;position:relative;
+  padding-left:3em;margin:0 0 clamp(16px,2.4vh,26px)}
+.script li:last-child{margin-bottom:0}
+.script li::before{content:counter(sc);position:absolute;left:0;top:-3px;
+  width:2em;text-align:right;font-family:var(--display);font-weight:600;
+  font-size:22px;color:var(--line-strong)}
+.script .do{display:block;font-size:16.5px;line-height:1.55;color:var(--ink-2)}
+.script .do b{color:var(--ink);font-weight:600}
+.script .see{display:block;margin-top:8px;padding:2px 0 2px 13px;
+  border-left:2px solid var(--sewer);font-size:14.5px;line-height:1.55;color:var(--muted)}
+.script .see i{display:block;font-style:normal;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--sewer);margin-bottom:3px}
+.script .see b{color:var(--ink-2);font-weight:600}
+.script .aside{display:block;margin-top:8px;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.script .aside b{color:var(--ink-2);font-weight:600}
+.script code{font-family:var(--mono);font-size:.86em;background:var(--sunk);
+  border:1px solid var(--line);padding:1px 5px;white-space:nowrap}
+.script li.crux::before{color:var(--comms)}
+.script li.crux .do{color:var(--ink)}
+.script li.crux .aside b{color:var(--comms)}
+
+/* the break between the run-through and everything after it */
+.down.brk{margin:clamp(46px,10vh,104px) 0 clamp(20px,4vh,44px);opacity:.5}
+.down.brk::before{content:"";position:absolute;left:0;right:0;top:50%;
+  height:1px;background:var(--line);z-index:-1}
+.down.brk{position:relative}
+
 /* the numbered run-through — the number is positioned, never a grid cell,
    so inline <b> and <code> keep flowing with the sentence */
 .runthrough{counter-reset:rt;margin:clamp(12px,2vh,22px) 0 0;padding:0;max-width:74ch}
