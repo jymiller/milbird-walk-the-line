@@ -27,7 +27,7 @@ fragment and its CSS, which are then spliced into `src/`:
 | `measured_vs_derived.py` | one photograph, its EXIF fix, the same fix on the plan |
 | `fiberhood_slide.py` | the block plan, both layers, the inspector |
 | `photo_truth.py` | the by-eye verdict for all 53 photographs |
-| `devices.py` | the laptop and the iPhone, on the Live Demo fold |
+| `devices.py` | TestFlight, the app and the laptop, on the Live Demo fold |
 
 `render.sh <fragment> <out.png> [light|dark] [w,h]` renders any fragment against
 the deck's real tokens. `verify.sh <slide-index> [fold]` shoots a slide inside the
@@ -40,14 +40,26 @@ reset.** Anything appended there is destroyed on publish — it renders locally 
 ships unstyled. All CSS must go in the block that carries `.deck{position:fixed`.
 This is why the FiberHood slide once looked broken for a whole day.
 
-**There is no TestFlight build, and no PWA.** Checked, not assumed: the bundle
-has zero hits for `TestFlight`, `itms-services` and `apps.apple.com`, no
-Capacitor / Cordova / React Native, no `<link rel="manifest">` and no
-`apple-touch-icon`; `/manifest.json` answers `200` but with `content-type:
-text/html`, which is the SPA fallback. (The 33 `expo` matches are substrings
-inside minified `*.exports` identifiers.) The field seat is **mobile Safari on a
-link** — `devices.py` draws that, and the figure says so out loud. Do not draw an
-install flow this product does not have.
+**There IS a TestFlight build — do not conclude otherwise from the web bundle.**
+An earlier pass grepped `walk-the-line.replit.app`'s JS bundle, found zero hits for
+`TestFlight` / `itms-services` / `apps.apple.com` / Capacitor / React Native, and
+published "there is no App Store build". That was wrong. The native app is a
+**separate codebase**, built by Rene in a Replit workspace that is not this
+repository and not on this machine — no `.xcodeproj` anywhere under
+`~/src/work/milbird`, and no mobile repo under the `jymiller` GitHub account.
+Absence from the web bundle says nothing about it.
+
+What is actually known, from photographs of a real iPhone taken 2026-09-20:
+TestFlight lists **Walk the Line, 1.0.0 (8), 90 days**; the app has three tabs,
+**Assignments / History / Account**; Assignments was empty
+("You're all caught up for today."); Account offers Sign out, so it authenticates.
+`devices.py` draws exactly that and nothing more.
+
+**Probing this API proves nothing about routes.** Everything under `/api` returns
+`401` — including `/api/banana` — because an auth middleware sits in front of the
+router. Every non-`/api` path returns `200`, including `/nonsense-xyz123`, because
+the SPA serves index.html as a fallback. Route claims must come from the bundle,
+which is real evidence; "I probed it and it answered" is not.
 
 **`class="door"` is not unique.** The block plan uses `<g class="door">` for the
 724 Pine marker, so counting doors on the Live Demo slide has to be scoped to
@@ -63,8 +75,13 @@ bounding box of the sixteen buildings on the block. 353 m at 0.87 m/s. See
 Photograph positions are measured (EXIF). Video reading positions are derived
 from that walk. Every surface says which.
 
-## The camera feed does not follow the palette
+## iOS does not follow the deck palette
 
-`#devsvg` scopes its own `--cam` / `--cam-ink`. A viewfinder is a photograph, not
-a UI surface: bound to `--ink` it inverts to white in dark mode and the
-framing marks vanish. Both themes were shot before this was believed.
+`#devsvg` scopes its own `--tf-*` and `--ap-*` tokens. TestFlight is black and the
+app is light whichever theme the deck is in, because those are photographs of a
+platform, not deck surfaces. Bound to `--ink`/`--paper` they invert in dark mode
+and the content disappears. Shoot both themes before believing a device drawing.
+
+SVG geometry belongs in the path, not in a CSS `transform`. The empty-state ring
+was a `<circle>` rotated with `transform-origin:center`, which resolved against
+the wrong box and threw it across the phone. It is now an explicit arc.
