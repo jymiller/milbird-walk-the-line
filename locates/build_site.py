@@ -22,35 +22,52 @@ SCRATCH = ("/private/tmp/claude-501/-Users-johnmiller-src-work-milbird-hackathon
            "2e1b1d50-e541-46e3-9992-0d85355741e9/scratchpad")
 
 # ---------------------------------------------------------------- geometry
-G = dict(door=[37.791388, -122.407837], pine=37.791201, california=37.792024,
-         joice=-122.408310, stockton=-122.407585, durationS=404.1)
+G = dict(door=[37.791388, -122.407837], durationS=404.1, gridDeg=9.11)
+# Corners of the walked pavement, SW SE NE NW — the oriented bounding box of the
+# sixteen buildings on the block, pushed out to the middle of the pavement. The
+# grid is 9.11 degrees, measured off 256 m of Pine Street centreline in OSM.
+CORNERS = [
+    (37.791216, -122.408231),
+    (37.791326, -122.407360),
+    (37.792205, -122.407538),
+    (37.792094, -122.408410),
+]
 MPD_LAT = 111320.0
 MPD_LON = 111320.0 * math.cos(G["door"][0] * math.pi / 180)
-d = G["door"]
-LEGS = [
-    [[G["pine"], d[1]], [G["pine"], G["joice"]]],
-    [[G["pine"], G["joice"]], [G["california"], G["joice"]]],
-    [[G["california"], G["joice"]], [G["california"], G["stockton"]]],
-    [[G["california"], G["stockton"]], [G["pine"], G["stockton"]]],
-    [[G["pine"], G["stockton"]], [G["pine"], d[1]]],
-]
+LEGS = [[CORNERS[i], CORNERS[(i + 1) % 4]] for i in range(4)]
 LENS = [math.hypot((b[1] - a[1]) * MPD_LON, (b[0] - a[0]) * MPD_LAT) for a, b in LEGS]
 PERIM = sum(LENS)
 
 
+def _door_offset():
+    best, acc = (float("inf"), 0.0), 0.0
+    for i, (a, b) in enumerate(LEGS):
+        ax = (a[1] - G["door"][1]) * MPD_LON; ay = (a[0] - G["door"][0]) * MPD_LAT
+        bx = (b[1] - a[1]) * MPD_LON;         by = (b[0] - a[0]) * MPD_LAT
+        L2 = bx * bx + by * by
+        t = max(0.0, min(1.0, (-(ax * bx + ay * by) / L2) if L2 else 0.0))
+        d = math.hypot(ax + t * bx, ay + t * by)
+        if d < best[0]:
+            best = (d, acc + t * LENS[i])
+        acc += LENS[i]
+    return best[1]
+
+
+S0 = _door_offset()
+
+
 def at_time(t):
-    s = (t / G["durationS"]) * PERIM
+    s = (S0 + (t / G["durationS"]) * PERIM) % PERIM
     i = 0
     while i < len(LENS) - 1 and s > LENS[i]:
-        s -= LENS[i]
-        i += 1
-    a, b = LEGS[i]
-    k = min(1.0, s / LENS[i])
+        s -= LENS[i]; i += 1
+    a, b = LEGS[i]; k = min(1.0, s / LENS[i])
     lat = a[0] + (b[0] - a[0]) * k
     lon = a[1] + (b[1] - a[1]) * k
     w = math.sin(t * 0.21) * 0.7 + math.sin(t * 0.083) * 0.5
-    horiz = abs(b[0] - a[0]) < abs(b[1] - a[1])
-    return (lat + w / MPD_LAT, lon) if horiz else (lat, lon + w / MPD_LON)
+    dy = (b[0] - a[0]) * MPD_LAT; dx = (b[1] - a[1]) * MPD_LON
+    L = math.hypot(dx, dy) or 1.0
+    return (lat + (w * (-dx / L)) / MPD_LAT, lon + (w * (dy / L)) / MPD_LON)
 
 
 SW = {"orange": "#D4621E", "red": "#C8102E", "yellow": "#B8860B", "green": "#2F6B46",
@@ -97,8 +114,8 @@ def main():
             "rules": x.get("rulesFired", []), "area": x.get("areaPx"),
             "why": (it.get("explanation") or "")[:240],
             "img": "frames/" + os.path.basename(it["url"]),
-            "positionProvenance": "DERIVED — reconstructed along the block perimeter "
-                                  "from one GPS anchor (+-7 m). Not surveyed.",
+            "positionProvenance": "DERIVED — reconstructed along the block perimeter, fitted to the "
+                                  "9.11 degree street grid, from one GPS anchor (+-7 m). Not surveyed.",
         })
     VIDEO.sort(key=lambda r: r["t"])
 
@@ -109,8 +126,8 @@ def main():
     html = PAGE
     for k, v in (("__PHOTOS__", json.dumps(PHOTOS)), ("__VIDEO__", json.dumps(VIDEO)),
                  ("__SW__", json.dumps(SW)), ("__UTIL__", json.dumps(UTIL)),
-                 ("__CENTRE__", json.dumps([(G["pine"] + G["california"]) / 2,
-                                            (G["joice"] + G["stockton"]) / 2])),
+                 ("__CENTRE__", json.dumps([sum(c[0] for c in CORNERS) / 4,
+                                            sum(c[1] for c in CORNERS) / 4])),
                  ("__WALK__", json.dumps([at_time(t) for t in range(0, 405, 3)])),
                  ("__NPH__", str(len(PHOTOS))), ("__NVI__", str(len(VIDEO)))):
         html = html.replace(k, v)
